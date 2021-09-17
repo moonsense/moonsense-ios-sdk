@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24D9CA9626CEE8E50000B1E4 /* MoonsenseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D9CA9526CEE8E50000B1E4 /* MoonsenseSDK.framework */; };
-		24D9CA9726CEE8E50000B1E4 /* MoonsenseSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24D9CA9526CEE8E50000B1E4 /* MoonsenseSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24845E4626F51CDE00445AAF /* MoonsenseSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24845E4426F51C9E00445AAF /* MoonsenseSDK.xcframework */; };
+		24845E4726F51CDE00445AAF /* MoonsenseSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24845E4426F51C9E00445AAF /* MoonsenseSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24E0512E26CED02800D243E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0512D26CED02800D243E0 /* AppDelegate.swift */; };
 		24E0513026CED02800D243E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0512F26CED02800D243E0 /* SceneDelegate.swift */; };
 		24E0513226CED02800D243E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0513126CED02800D243E0 /* ViewController.swift */; };
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				24D9CA9726CEE8E50000B1E4 /* MoonsenseSDK.framework in Embed Frameworks */,
+				24845E4726F51CDE00445AAF /* MoonsenseSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,7 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		24D9CA9526CEE8E50000B1E4 /* MoonsenseSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MoonsenseSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24845E4426F51C9E00445AAF /* MoonsenseSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MoonsenseSDK.xcframework; sourceTree = "<group>"; };
 		24E0512A26CED02800D243E0 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E0512D26CED02800D243E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E0512F26CED02800D243E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24D9CA9626CEE8E50000B1E4 /* MoonsenseSDK.framework in Frameworks */,
+				24845E4626F51CDE00445AAF /* MoonsenseSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +58,7 @@
 		24D9CA9426CEE8E50000B1E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				24D9CA9526CEE8E50000B1E4 /* MoonsenseSDK.framework */,
+				24845E4426F51C9E00445AAF /* MoonsenseSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

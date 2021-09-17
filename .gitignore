@@ -11,3 +11,5 @@ TCVersion.h
 *.xccheckout
 !*.xcworkspacedata
 xcuserdata/
+
+SampleApp/MoonsenseSDK.xcframework
