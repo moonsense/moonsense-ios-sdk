@@ -22,11 +22,17 @@ The full feature list for this release includes:
 - Publish the accelerometer data to the Moonsense Cloud.
 - Stop all or individual sessions.
 
+## Prerequisites
+
+- Xcode 13.0+
+- Swift projects must use Swift 5.0 or greater
+- Deployment target of iOS 11.0 or greater
+
 ## Integration
 
 This repository is currently invite only and thus Private. There is an issue with Swift Package Manager where it cannot download artifacts from release artifacts in private Github repositories. We are investigating other solutions for storing the release artifacts but until that is resolved, the SDK must be installed manually.
 
-Download the `MoonsenseSDK.xcframework.zip` artifact from the `0.1.0-alpha1` release. Unzip the file and drop the file into the `SampleApp` folder.
+Download the `MoonsenseSDK.xcframework.zip` artifact from the `0.1.0-alpha1` release. Unzip the file and drop the file into the `moonsense-ios-sdk/SampleApp` folder.
 
 In the near future, once the artifact is being stored outside of the Github release, Swift Package Manager will be supported.
 
