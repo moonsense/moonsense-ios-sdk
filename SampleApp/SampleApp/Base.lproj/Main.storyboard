@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19158" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19141"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kH-5M-D2Q">
+                                <rect key="frame" x="20" y="366.5" width="374" height="173"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active Session Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OH-yt-aoq">
+                                        <rect key="frame" x="0.0" y="8" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVF-8e-YGG">
+                                        <rect key="frame" x="0.0" y="37" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afg-ZC-oPH">
+                                        <rect key="frame" x="124" y="83" width="126" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Start New Session"/>
+                                        <connections>
+                                            <action selector="startSession:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4bR-hf-9fY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5b-jc-SWs">
+                                        <rect key="frame" x="128" y="121" width="118" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Stop All Sessions"/>
+                                        <connections>
+                                            <action selector="stopAllSessions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LOt-K8-HTt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cVF-8e-YGG" firstAttribute="top" secondItem="6OH-yt-aoq" secondAttribute="bottom" constant="8" symbolic="YES" id="9qm-b1-qU0"/>
+                                    <constraint firstItem="i5b-jc-SWs" firstAttribute="centerX" secondItem="0kH-5M-D2Q" secondAttribute="centerX" id="BOY-HO-80E"/>
+                                    <constraint firstItem="Afg-ZC-oPH" firstAttribute="centerX" secondItem="0kH-5M-D2Q" secondAttribute="centerX" id="CuA-i9-sQj"/>
+                                    <constraint firstItem="6OH-yt-aoq" firstAttribute="width" secondItem="0kH-5M-D2Q" secondAttribute="width" id="Kfk-be-aiw"/>
+                                    <constraint firstItem="cVF-8e-YGG" firstAttribute="centerX" secondItem="0kH-5M-D2Q" secondAttribute="centerX" id="QBV-l1-vIr"/>
+                                    <constraint firstAttribute="height" constant="173" id="UgZ-U4-aIb"/>
+                                    <constraint firstItem="6OH-yt-aoq" firstAttribute="top" secondItem="0kH-5M-D2Q" secondAttribute="top" constant="8" id="bwP-Mm-jVz"/>
+                                    <constraint firstItem="cVF-8e-YGG" firstAttribute="width" secondItem="0kH-5M-D2Q" secondAttribute="width" id="dYf-aJ-WkG"/>
+                                    <constraint firstItem="6OH-yt-aoq" firstAttribute="centerX" secondItem="0kH-5M-D2Q" secondAttribute="centerX" id="j5q-o3-cw0"/>
+                                    <constraint firstItem="i5b-jc-SWs" firstAttribute="top" secondItem="Afg-ZC-oPH" secondAttribute="bottom" constant="8" symbolic="YES" id="qEJ-gH-xoq"/>
+                                    <constraint firstItem="Afg-ZC-oPH" firstAttribute="top" secondItem="cVF-8e-YGG" secondAttribute="bottom" constant="25" id="vAH-0S-0SC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0kH-5M-D2Q" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="QoF-T7-UVo"/>
+                            <constraint firstItem="0kH-5M-D2Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="R4c-xN-ab0"/>
+                            <constraint firstItem="0kH-5M-D2Q" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="c57-z3-xUR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="cVF-8e-YGG" id="KMD-8n-vtX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
