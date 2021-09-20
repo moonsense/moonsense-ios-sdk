@@ -7,8 +7,9 @@ This repository includes a sample app that demonstrates the use of the Moonsense
 ## TLDR
 
 - Clone this repository.
+- Download the `MoonsenseSDK.xcframework` release asset from the [Github Releases page](https://github.com/moonsense/moonsense-ios-sdk/releases). Unzip the `XCFramework` and drag it into the SampleApp folder.
 - Create a public token on the [Moonsense Console](https://console.moonsense.cloud/) for your application.
-- Add the public token to the `ViewController` in the `SampleApp`.
+- Add the public token to the `publicToken` variable in `ViewController.swift` in the `SampleApp`.
 - Run the `SampleApp` on your iOS device.
 
 ## Features
@@ -21,9 +22,19 @@ The full feature list for this release includes:
 - Publish the accelerometer data to the Moonsense Cloud.
 - Stop all or individual sessions.
 
+## Prerequisites
+
+- Xcode 13.0+
+- Swift projects must use Swift 5.0 or greater
+- Deployment target of iOS 11.0 or greater
+
 ## Integration
 
+This repository is currently invite only and thus Private. There is an issue with Swift Package Manager where it cannot download artifacts from release artifacts in private Github repositories. We are investigating other solutions for storing the release artifacts but until that is resolved, the SDK must be installed manually.
 
+Download the `MoonsenseSDK.xcframework.zip` artifact from the `0.1.0-alpha1` release. Unzip the file and drop the file into the `moonsense-ios-sdk/SampleApp` folder.
+
+In the near future, once the artifact is being stored outside of the Github release, Swift Package Manager will be supported.
 
 ## Usage
 
