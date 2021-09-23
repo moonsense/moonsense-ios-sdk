@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24845E4626F51CDE00445AAF /* MoonsenseSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24845E4426F51C9E00445AAF /* MoonsenseSDK.xcframework */; };
-		24845E4726F51CDE00445AAF /* MoonsenseSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24845E4426F51C9E00445AAF /* MoonsenseSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		245DB36F26FA545B003A5B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0513126CED02800D243E0 /* ViewController.swift */; };
+		245DB37026FA545B003A5B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0512D26CED02800D243E0 /* AppDelegate.swift */; };
+		245DB37126FA545B003A5B73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0512F26CED02800D243E0 /* SceneDelegate.swift */; };
+		245DB37526FA545B003A5B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E0513826CED02A00D243E0 /* LaunchScreen.storyboard */; };
+		245DB37626FA545B003A5B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E0513626CED02A00D243E0 /* Assets.xcassets */; };
+		245DB37726FA545B003A5B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E0513326CED02800D243E0 /* Main.storyboard */; };
+		24804E5426FCC6B100BF4CB1 /* MoonsenseSDK-static.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24804E5326FCC6B100BF4CB1 /* MoonsenseSDK-static.xcframework */; };
+		24804E5726FCC6FC00BF4CB1 /* MoonsenseSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24804E5526FCC6D000BF4CB1 /* MoonsenseSDK.xcframework */; };
+		24804E5826FCC6FC00BF4CB1 /* MoonsenseSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24804E5526FCC6D000BF4CB1 /* MoonsenseSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24E0512E26CED02800D243E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0512D26CED02800D243E0 /* AppDelegate.swift */; };
 		24E0513026CED02800D243E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0512F26CED02800D243E0 /* SceneDelegate.swift */; };
 		24E0513226CED02800D243E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0513126CED02800D243E0 /* ViewController.swift */; };
@@ -24,7 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				24845E4726F51CDE00445AAF /* MoonsenseSDK.xcframework in Embed Frameworks */,
+				24804E5826FCC6FC00BF4CB1 /* MoonsenseSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,7 +39,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		24845E4426F51C9E00445AAF /* MoonsenseSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MoonsenseSDK.xcframework; sourceTree = "<group>"; };
+		245DB37D26FA545B003A5B73 /* SampleApp-Static.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SampleApp-Static.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24804E5326FCC6B100BF4CB1 /* MoonsenseSDK-static.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "MoonsenseSDK-static.xcframework"; sourceTree = SOURCE_ROOT; };
+		24804E5526FCC6D000BF4CB1 /* MoonsenseSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MoonsenseSDK.xcframework; sourceTree = SOURCE_ROOT; };
 		24E0512A26CED02800D243E0 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E0512D26CED02800D243E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E0512F26CED02800D243E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,11 +53,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		245DB37226FA545B003A5B73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24804E5426FCC6B100BF4CB1 /* MoonsenseSDK-static.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24E0512726CED02800D243E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24845E4626F51CDE00445AAF /* MoonsenseSDK.xcframework in Frameworks */,
+				24804E5726FCC6FC00BF4CB1 /* MoonsenseSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +75,8 @@
 		24D9CA9426CEE8E50000B1E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				24845E4426F51C9E00445AAF /* MoonsenseSDK.xcframework */,
+				24804E5526FCC6D000BF4CB1 /* MoonsenseSDK.xcframework */,
+				24804E5326FCC6B100BF4CB1 /* MoonsenseSDK-static.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -76,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				24E0512A26CED02800D243E0 /* SampleApp.app */,
+				245DB37D26FA545B003A5B73 /* SampleApp-Static.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +116,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		245DB36D26FA545B003A5B73 /* SampleApp-Static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 245DB37A26FA545B003A5B73 /* Build configuration list for PBXNativeTarget "SampleApp-Static" */;
+			buildPhases = (
+				245DB36E26FA545B003A5B73 /* Sources */,
+				245DB37226FA545B003A5B73 /* Frameworks */,
+				245DB37426FA545B003A5B73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SampleApp-Static";
+			productName = SampleApp;
+			productReference = 245DB37D26FA545B003A5B73 /* SampleApp-Static.app */;
+			productType = "com.apple.product-type.application";
+		};
 		24E0512926CED02800D243E0 /* SampleApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24E0513E26CED02A00D243E0 /* Build configuration list for PBXNativeTarget "SampleApp" */;
@@ -145,11 +181,22 @@
 			projectRoot = "";
 			targets = (
 				24E0512926CED02800D243E0 /* SampleApp */,
+				245DB36D26FA545B003A5B73 /* SampleApp-Static */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		245DB37426FA545B003A5B73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245DB37526FA545B003A5B73 /* LaunchScreen.storyboard in Resources */,
+				245DB37626FA545B003A5B73 /* Assets.xcassets in Resources */,
+				245DB37726FA545B003A5B73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24E0512826CED02800D243E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +210,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		245DB36E26FA545B003A5B73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245DB36F26FA545B003A5B73 /* ViewController.swift in Sources */,
+				245DB37026FA545B003A5B73 /* AppDelegate.swift in Sources */,
+				245DB37126FA545B003A5B73 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24E0512626CED02800D243E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,6 +252,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		245DB37B26FA545B003A5B73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = APX2AGX45B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.moonsense.MoonsenseSDK.SampleApp-Static";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		245DB37C26FA545B003A5B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = APX2AGX45B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.moonsense.MoonsenseSDK.SampleApp-Static";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		24E0513C26CED02A00D243E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -370,6 +483,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		245DB37A26FA545B003A5B73 /* Build configuration list for PBXNativeTarget "SampleApp-Static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245DB37B26FA545B003A5B73 /* Debug */,
+				245DB37C26FA545B003A5B73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		24E0512526CED02800D243E0 /* Build configuration list for PBXProject "SampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
