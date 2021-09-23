@@ -2,12 +2,20 @@
 
 ## Introduction
 
-This repository includes a sample app that demonstrates the use of the Moonsense SDK for iOS.
+This repository hosts the realeases of the Moonsense iOS SDK. Two variants of the Moonsense iOS SDK are available, a dynamically linked `.xcframework` and a statically linked `.xcframework`. This repository also holds sample applications that demonstrate the use of the Moonsense SDK for iOS.
+
+### `MoonsenseSDK.xcframework`
+
+The `MoonsenseSDK.xcframework` contains the dynamically linked variant of the Moonsense iOS SDK. When using the dynamically linked variant of the SDK, you must embed the framework within your target so the OS can load it at runtime. This approach works fine if you are building an application that directly consumes the SDK or are building your own framework that is being used internally. If you are building a framework that you are providing to another party and you don't wish for them to see that your framework depends on the Moonsense iOS SDK, see the `MoonsenseSDK-static.xcframework` section below.
+
+### `MoonsenseSDK-static.xcframework`
+
+The `MoonsenseSDK-static.xcframework` contains the statically linked variant of the Moonsense iOS SDK. When using the statically linked variant of the SDK, the linker will embed the necessary code from the SDK into your target. The `Moonsense-static.xcframework` should **NOT** be embedded into your target. If you are building a framework that you are providing to another party, they will only see your public API and not the Moonsense iOS SDK public API.
 
 ## TLDR
 
 - Clone this repository.
-- Download the `MoonsenseSDK.xcframework` release asset from the [Github Releases page](https://github.com/moonsense/moonsense-ios-sdk/releases). Unzip the `XCFramework` and drag it into the SampleApp folder.
+- Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` release assets from the [Github Releases page](https://github.com/moonsense/moonsense-ios-sdk/releases). Unzip the `*.xcframework.zip` artifacts and drag them into the `<CLONE_DIR>/SampleApp` folder.
 - Create a public token on the [Moonsense Console](https://console.moonsense.cloud/) for your application.
 - Add the public token to the `publicToken` variable in `ViewController.swift` in the `SampleApp`.
 - Run the `SampleApp` on your iOS device.
@@ -30,9 +38,9 @@ The full feature list for this release includes:
 
 ## Integration
 
-This repository is currently invite only and thus Private. There is an issue with Swift Package Manager where it cannot download artifacts from release artifacts in private Github repositories. We are investigating other solutions for storing the release artifacts but until that is resolved, the SDK must be installed manually.
+This repository is currently invite only and thus it is a Private GitHub repository. There is an issue with Swift Package Manager where it cannot download artifacts from Release artifacts in private Github repositories. We are investigating other solutions for storing the release artifacts but until that is resolved, the SDK must be installed manually.
 
-Download the `MoonsenseSDK.xcframework.zip` artifact from the `0.1.0-alpha2` release. Unzip the file and drop the file into the `moonsense-ios-sdk/SampleApp` folder.
+Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` artifacts from the `0.1.0-alpha2` release. Unzip the files and drop the file into the `<CLONE_DIR>/SampleApp` folder.
 
 In the near future, once the artifact is being stored outside of the Github release, Swift Package Manager will be supported.
 
