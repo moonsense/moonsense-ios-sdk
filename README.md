@@ -14,7 +14,7 @@ This repository includes a sample app that demonstrates the use of the Moonsense
 
 ## Features
 
-The current latest release of the SDK is `0.1.0-alpha1`. The purpose of this release in a nutshell is to introduce the public API for the iOS SDK. The release also serves as a good starting point to test out a very early integration of the SDK into applications and libraries. 
+The current latest release of the SDK is `0.1.0-alpha2`. The purpose of this release in a nutshell is to introduce the public API for the iOS SDK. The release also serves as a good starting point to test out a very early integration of the SDK into applications and libraries. 
 
 The full feature list for this release includes:
 - The ability to authenticate with the SDK using the public token provided by the [Moonsense Console](https://console.moonsense.cloud/).
@@ -32,7 +32,7 @@ The full feature list for this release includes:
 
 This repository is currently invite only and thus Private. There is an issue with Swift Package Manager where it cannot download artifacts from release artifacts in private Github repositories. We are investigating other solutions for storing the release artifacts but until that is resolved, the SDK must be installed manually.
 
-Download the `MoonsenseSDK.xcframework.zip` artifact from the `0.1.0-alpha1` release. Unzip the file and drop the file into the `moonsense-ios-sdk/SampleApp` folder.
+Download the `MoonsenseSDK.xcframework.zip` artifact from the `0.1.0-alpha2` release. Unzip the file and drop the file into the `moonsense-ios-sdk/SampleApp` folder.
 
 In the near future, once the artifact is being stored outside of the Github release, Swift Package Manager will be supported.
 
