@@ -15,7 +15,7 @@ The `MoonsenseSDK-static.xcframework` contains the statically linked variant of 
 ## TLDR
 
 - Clone this repository.
-- Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` release assets from the [Github Releases page](https://github.com/moonsense/moonsense-ios-sdk/releases). Unzip the `*.xcframework.zip` artifacts and drag them into the `<CLONE_DIR>/SampleApp` folder.
+- Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` release assets from the [Github Releases page](https://github.com/moonsense/moonsense-ios-sdk/releases). Unzip the `*.xcframework.zip` artifacts and drag them into the `<CLONE_DIR>/SampleApp` folder using the Finder application.
 - Create a public token on the [Moonsense Console](https://console.moonsense.cloud/) for your application.
 - Add the public token to the `publicToken` variable in `ViewController.swift` in the `SampleApp`.
 - Run the `SampleApp` on your iOS device.
@@ -40,7 +40,7 @@ The full feature list for this release includes:
 
 This repository is currently invite only and thus it is a Private GitHub repository. There is an issue with Swift Package Manager where it cannot download artifacts from Release artifacts in private Github repositories. We are investigating other solutions for storing the release artifacts but until that is resolved, the SDK must be installed manually.
 
-Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` artifacts from the `0.1.0-alpha2` release. Unzip the files and drop the file into the `<CLONE_DIR>/SampleApp` folder.
+Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` artifacts from the `0.1.0-alpha2` release. Unzip the files and drop the file into the `<CLONE_DIR>/SampleApp` folder using the Finder application.
 
 In the near future, once the artifact is being stored outside of the Github release, Swift Package Manager will be supported.
 
@@ -58,6 +58,10 @@ The `initialize(publicToken:delegate:)` method also accepts an optional `Moonsen
 Once initialized you can use the `startSession()` and `stopAllSessions()` methods to start and stop recording sessions respectively. If you need finer control over stopping individual sessions, the `startSession()` call returns a `Session` object that includes a `stopSession()` method.
 
 This repo includes a sample app that demonstrates the SDK usage.
+
+## Sample App
+
+The included `SampleApp` Xcode project contains two targets, `SampleApp` and `SampleApp-Static`. The `SampleApp` target consumes the `MoonsenseSDK.xcframework` dynamically linked variant. The `SampleApp-Static` target consumes the `MoonsneseSDK-static.xcframework` target.
 
 ## Terms Of Service
 
