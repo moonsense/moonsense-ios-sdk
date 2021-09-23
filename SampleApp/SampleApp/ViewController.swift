@@ -10,7 +10,7 @@ import MoonsenseSDK
 
 class ViewController: UIViewController {
 
-    let publicToken = "YOUR_PUBLIC_TOKEN"
+    let publicToken = <#YOUR PUBLIC TOKEN#>
 
     @IBOutlet weak var countLabel: UILabel!
 
