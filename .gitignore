@@ -13,3 +13,4 @@ TCVersion.h
 xcuserdata/
 
 SampleApp/MoonsenseSDK.xcframework
+SampleApp/MoonsenseSDK-static.xcframework
