@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository hosts the realeases of the Moonsense iOS SDK. Two variants of the Moonsense iOS SDK are available, a dynamically linked `.xcframework` and a statically linked `.xcframework`. This repository also holds sample applications that demonstrate the use of the Moonsense SDK for iOS.
+This repository hosts the releases of the Moonsense iOS SDK. Two variants of the Moonsense iOS SDK are available, a dynamically linked `.xcframework` and a statically linked `.xcframework`. This repository also holds sample applications that demonstrate the use of the Moonsense SDK for iOS.
 
 ### `MoonsenseSDK.xcframework`
 
