@@ -10,7 +10,7 @@ The `SampleApp` project demonstrates the use of the Moonsense iOS SDK within a s
 
 ## Integration
 
-Follow the steps from the main [`README.md`](../README.md/#integration)` to install the dependencies on the Moonsense iOS SDK.
+Follow the steps from the main [`README.md`](../README.md/#integration) to install the dependencies on the Moonsense iOS SDK.
 
 ## Authentication
 

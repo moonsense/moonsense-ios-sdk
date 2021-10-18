@@ -12,7 +12,7 @@ The `SamplePaymentSDK` provides an example Swipe to Buy experience which is reco
 
 ## Integration
 
-Follow the steps from the main [`README.md`](../README.md/#integration)` to install the dependencies on the Moonsense iOS SDK.
+Follow the steps from the main [`README.md`](../README.md/#integration) to install the dependencies on the Moonsense iOS SDK.
 
 ## Authentication
 

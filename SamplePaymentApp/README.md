@@ -10,7 +10,7 @@ The `SamplePaymentApp` demonstrates how a Third Party `.xcframework` which inclu
 
 ## Integration
 
-Follow the steps from the main [`README.md`](../README.md/#integration)` to install the dependencies on the Moonsense iOS SDK.
+Follow the steps from the main [`README.md`](../README.md/#integration) to install the dependencies on the Moonsense iOS SDK.
 
 ## Authentication
 
