@@ -12,5 +12,6 @@ TCVersion.h
 !*.xcworkspacedata
 xcuserdata/
 
-SampleApp/MoonsenseSDK.xcframework
-SampleApp/MoonsenseSDK-static.xcframework
+# Ignore the Moonsense frameworks
+MoonsenseSDK.xcframework
+MoonsenseSDK-static.xcframework
