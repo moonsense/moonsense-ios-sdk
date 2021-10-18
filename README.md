@@ -22,10 +22,7 @@ The `MoonsenseSDK-static.xcframework` contains the statically linked variant of 
 
 ## Version History
 
-The latest release of the SDK is `0.1.0-alpha2`. Details about the current and past releases can be found below:
-
-- [0.1.0-alpha2](https://github.com/moonsense/moonsense-ios-sdk/releases/tag/0.1.0-alpha2)
-- [0.1.0-alpha1](https://github.com/moonsense/moonsense-ios-sdk/releases/tag/0.1.0-alpha1)
+The latest release of the SDK is `0.1.0-alpha2`. Details about the current and past releases can be found [here](https://github.com/moonsense/moonsense-ios-sdk/releases/).
 
 ## Prerequisites
 
@@ -37,7 +34,7 @@ The latest release of the SDK is `0.1.0-alpha2`. Details about the current and p
 
 This repository is currently invite only and thus it is a Private GitHub repository. There is an issue with Swift Package Manager where it cannot download artifacts from Release artifacts in private Github repositories. We are investigating other solutions for storing the release artifacts but until that is resolved, the SDK must be installed manually.
 
-Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` artifacts from the `0.1.0-alpha2` release. Unzip the files and drop the file into the `<CLONE_DIR>/xcframeworks` folder using the Finder application.
+Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` artifacts from the [`0.1.0-alpha2` release](https://github.com/moonsense/moonsense-ios-sdk/releases/tag/0.1.0-alpha2). Unzip the files and drop the file into the `<CLONE_DIR>/xcframeworks` folder using the Finder application.
 
 In the near future, once the artifact is being stored outside of the Github release, Swift Package Manager will be supported.
 
