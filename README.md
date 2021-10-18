@@ -15,20 +15,17 @@ The `MoonsenseSDK-static.xcframework` contains the statically linked variant of 
 ## TLDR
 
 - Clone this repository.
-- Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` release assets from the [Github Releases page](https://github.com/moonsense/moonsense-ios-sdk/releases). Unzip the `*.xcframework.zip` artifacts and drag them into the `<CLONE_DIR>/SampleApp` folder using the Finder application.
+- Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` release assets from the [Github Releases page](https://github.com/moonsense/moonsense-ios-sdk/releases). Unzip the `*.xcframework.zip` artifacts and drag them into the `<CLONE_DIR>/xcframeworks` folder using the Finder application.
 - Create a public token on the [Moonsense Console](https://console.moonsense.cloud/) for your application.
 - Add the public token to the `publicToken` variable in `ViewController.swift` in the `SampleApp`.
 - Run the `SampleApp` on your iOS device.
 
-## Features
+## Version History
 
-The current latest release of the SDK is `0.1.0-alpha2`. The purpose of this release in a nutshell is to introduce the public API for the iOS SDK. The release also serves as a good starting point to test out a very early integration of the SDK into applications and libraries. 
+The latest rekease of the SDK is `0.1.0-alpha2`. Details about the current and past releases can be found below:
 
-The full feature list for this release includes:
-- The ability to authenticate with the SDK using the public token provided by the [Moonsense Console](https://console.moonsense.cloud/).
-- Start a session to collect accelerometer data from the device.
-- Publish the accelerometer data to the Moonsense Cloud.
-- Stop all or individual sessions.
+- [0.1.0-alpha2](https://github.com/moonsense/moonsense-ios-sdk/releases/tag/0.1.0-alpha2)
+- [0.1.0-alpha1](https://github.com/moonsense/moonsense-ios-sdk/releases/tag/0.1.0-alpha1)
 
 ## Prerequisites
 
@@ -40,7 +37,7 @@ The full feature list for this release includes:
 
 This repository is currently invite only and thus it is a Private GitHub repository. There is an issue with Swift Package Manager where it cannot download artifacts from Release artifacts in private Github repositories. We are investigating other solutions for storing the release artifacts but until that is resolved, the SDK must be installed manually.
 
-Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` artifacts from the `0.1.0-alpha2` release. Unzip the files and drop the file into the `<CLONE_DIR>/SampleApp` folder using the Finder application.
+Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` artifacts from the `0.1.0-alpha2` release. Unzip the files and drop the file into the `<CLONE_DIR>/xcframeworks` folder using the Finder application.
 
 In the near future, once the artifact is being stored outside of the Github release, Swift Package Manager will be supported.
 
@@ -57,11 +54,10 @@ The `initialize(publicToken:delegate:)` method also accepts an optional `Moonsen
 
 Once initialized you can use the `startSession()` and `stopAllSessions()` methods to start and stop recording sessions respectively. If you need finer control over stopping individual sessions, the `startSession()` call returns a `Session` object that includes a `stopSession()` method.
 
-This repo includes a sample app that demonstrates the SDK usage.
+This repo includes two sample apps and a sample SDK accessibe from the `MoonsenseSamples.xcworkspace` Xcode Workspace:
 
-## Sample App
-
-The included `SampleApp` Xcode project contains two targets, `SampleApp` and `SampleApp-Static`. The `SampleApp` target consumes the `MoonsenseSDK.xcframework` dynamically linked variant. The `SampleApp-Static` target consumes the `MoonsneseSDK-static.xcframework` target.
+- [`SampleApp`](SampleApp/) - This sample app demonstrates the use of the Moonsense iOS SDK within a simple application. The example in this case is quite simple and minimal and can serve as a good starting point for developers looking for a quick integration. The `SampleApp` Xcode project contains two targets, `SampleApp` and `SampleApp-Static`. The `SampleApp` target consumes the `MoonsenseSDK.xcframework` dynamically linked variant. The `SampleApp-Static` target consumes the `MoonsneseSDK-static.xcframework` target.
+- [`SamplePaymentApp`](SamplePaymentApp/) - This sample app demonstrates the library usage of the Moonsense iOS SDK. Note that the `SamplePaymentApp` does not directly depend on the Moonsense iOS SDK. Instead it includes a dependency to the [`SamplePaymentSDK`](SamplePaymentSDK/) which consumes the Moonsense iOS SDK statically linked variant. The app developer here does not have any visibility into the Moonsense iOS SDK as they only interface with the `SamplePaymentSDK`. The example is useful for SDK/library developers looking to integrate the Moonsense iOS SDK.
 
 ## Terms Of Service
 
