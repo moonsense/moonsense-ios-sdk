@@ -8,7 +8,7 @@
 import UIKit
 
 // The `SDKOverlayWindow` will be used to display all UIComponents from the SamplePaymentSDK.
-// This approach ensures that the views owened by the SamplePaymentSDK do not interfere
+// This approach ensures that the views owned by the SamplePaymentSDK do not interfere
 // with any view hierachies from the app consuming the SamplePaymentSDK framework.
 class SDKOverlayWindow: UIWindow {
     override init(frame: CGRect) {

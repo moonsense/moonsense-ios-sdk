@@ -8,7 +8,7 @@
 import UIKit
 import MoonsenseSDK
 
-/// The entry point for theSamplePaymentSDK.
+/// The entry point for the SamplePaymentSDK.
 public class Payment {
 
     // MARK: - Public API
