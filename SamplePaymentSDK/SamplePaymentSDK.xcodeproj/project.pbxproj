@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		247587032718AE03003F2E60 /* SwipeToBuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247587022718AE03003F2E60 /* SwipeToBuyView.swift */; };
+		247587052718AE19003F2E60 /* SwipeToBuyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247587042718AE19003F2E60 /* SwipeToBuyView.xib */; };
+		247587072718CA45003F2E60 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247587062718CA45003F2E60 /* UIColorExtensions.swift */; };
+		2475870B2718CF6C003F2E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2475870A2718CF6C003F2E60 /* Assets.xcassets */; };
+		2475870D2719D2F3003F2E60 /* SDKOverlayWindowPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475870C2719D2F3003F2E60 /* SDKOverlayWindowPresentable.swift */; };
+		24889C9227171F2800F70CCF /* MoonsenseSDK-static.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24889C9127171F2800F70CCF /* MoonsenseSDK-static.xcframework */; };
+		24889C942717212900F70CCF /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24889C932717212900F70CCF /* Payment.swift */; };
+		24889C9E27173E3800F70CCF /* SDKOverlayWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24889C9D27173E3800F70CCF /* SDKOverlayWindow.swift */; };
+		24889CA027173F2600F70CCF /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24889C9F27173F2600F70CCF /* PaymentViewController.swift */; };
+		24889CA22717449300F70CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24889CA12717449300F70CCF /* Main.storyboard */; };
+		24889CAA2717492300F70CCF /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24889CA82717492300F70CCF /* Poppins-Regular.ttf */; };
+		24889CAB2717492300F70CCF /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24889CA92717492300F70CCF /* Poppins-SemiBold.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		247587022718AE03003F2E60 /* SwipeToBuyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToBuyView.swift; sourceTree = "<group>"; };
+		247587042718AE19003F2E60 /* SwipeToBuyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeToBuyView.xib; sourceTree = "<group>"; };
+		247587062718CA45003F2E60 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		2475870A2718CF6C003F2E60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2475870C2719D2F3003F2E60 /* SDKOverlayWindowPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKOverlayWindowPresentable.swift; sourceTree = "<group>"; };
+		24889C8427171ECE00F70CCF /* SamplePaymentSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SamplePaymentSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24889C9127171F2800F70CCF /* MoonsenseSDK-static.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "MoonsenseSDK-static.xcframework"; path = "../xcframeworks/MoonsenseSDK-static.xcframework"; sourceTree = SOURCE_ROOT; };
+		24889C932717212900F70CCF /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		24889C9D27173E3800F70CCF /* SDKOverlayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKOverlayWindow.swift; sourceTree = "<group>"; };
+		24889C9F27173F2600F70CCF /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		24889CA12717449300F70CCF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		24889CA82717492300F70CCF /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		24889CA92717492300F70CCF /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		24889CAC2717494600F70CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24889C8127171ECE00F70CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24889C9227171F2800F70CCF /* MoonsenseSDK-static.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24889C7A27171ECE00F70CCF = {
+			isa = PBXGroup;
+			children = (
+				24889C8627171ECE00F70CCF /* SamplePaymentSDK */,
+				24889C8527171ECE00F70CCF /* Products */,
+				24889C9027171F2800F70CCF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24889C8527171ECE00F70CCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24889C8427171ECE00F70CCF /* SamplePaymentSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24889C8627171ECE00F70CCF /* SamplePaymentSDK */ = {
+			isa = PBXGroup;
+			children = (
+				24889C9B27173DD700F70CCF /* UI Resources */,
+				24889C932717212900F70CCF /* Payment.swift */,
+				24889CAC2717494600F70CCF /* Info.plist */,
+			);
+			path = SamplePaymentSDK;
+			sourceTree = "<group>";
+		};
+		24889C9027171F2800F70CCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24889C9127171F2800F70CCF /* MoonsenseSDK-static.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24889C9B27173DD700F70CCF /* UI Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2475870A2718CF6C003F2E60 /* Assets.xcassets */,
+				24889CA7271748D000F70CCF /* Fonts */,
+				24889CA12717449300F70CCF /* Main.storyboard */,
+				24889C9F27173F2600F70CCF /* PaymentViewController.swift */,
+				24889C9D27173E3800F70CCF /* SDKOverlayWindow.swift */,
+				2475870C2719D2F3003F2E60 /* SDKOverlayWindowPresentable.swift */,
+				247587022718AE03003F2E60 /* SwipeToBuyView.swift */,
+				247587042718AE19003F2E60 /* SwipeToBuyView.xib */,
+				247587062718CA45003F2E60 /* UIColorExtensions.swift */,
+			);
+			path = "UI Resources";
+			sourceTree = "<group>";
+		};
+		24889CA7271748D000F70CCF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				24889CA82717492300F70CCF /* Poppins-Regular.ttf */,
+				24889CA92717492300F70CCF /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24889C7F27171ECE00F70CCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		24889C8327171ECE00F70CCF /* SamplePaymentSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24889C8D27171ECE00F70CCF /* Build configuration list for PBXNativeTarget "SamplePaymentSDK" */;
+			buildPhases = (
+				24889C7F27171ECE00F70CCF /* Headers */,
+				24889C8027171ECE00F70CCF /* Sources */,
+				24889C8127171ECE00F70CCF /* Frameworks */,
+				24889C8227171ECE00F70CCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SamplePaymentSDK;
+			productName = SamplePaymentSDK;
+			productReference = 24889C8427171ECE00F70CCF /* SamplePaymentSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24889C7B27171ECE00F70CCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					24889C8327171ECE00F70CCF = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 24889C7E27171ECE00F70CCF /* Build configuration list for PBXProject "SamplePaymentSDK" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24889C7A27171ECE00F70CCF;
+			productRefGroup = 24889C8527171ECE00F70CCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24889C8327171ECE00F70CCF /* SamplePaymentSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24889C8227171ECE00F70CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24889CAB2717492300F70CCF /* Poppins-SemiBold.ttf in Resources */,
+				247587052718AE19003F2E60 /* SwipeToBuyView.xib in Resources */,
+				24889CA22717449300F70CCF /* Main.storyboard in Resources */,
+				24889CAA2717492300F70CCF /* Poppins-Regular.ttf in Resources */,
+				2475870B2718CF6C003F2E60 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24889C8027171ECE00F70CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24889CA027173F2600F70CCF /* PaymentViewController.swift in Sources */,
+				2475870D2719D2F3003F2E60 /* SDKOverlayWindowPresentable.swift in Sources */,
+				247587032718AE03003F2E60 /* SwipeToBuyView.swift in Sources */,
+				24889C942717212900F70CCF /* Payment.swift in Sources */,
+				24889C9E27173E3800F70CCF /* SDKOverlayWindow.swift in Sources */,
+				247587072718CA45003F2E60 /* UIColorExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		24889C8B27171ECE00F70CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		24889C8C27171ECE00F70CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		24889C8E27171ECE00F70CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = APX2AGX45B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SamplePaymentSDK/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.moonsense.SamplePaymentSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24889C8F27171ECE00F70CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = APX2AGX45B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SamplePaymentSDK/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.moonsense.SamplePaymentSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24889C7E27171ECE00F70CCF /* Build configuration list for PBXProject "SamplePaymentSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24889C8B27171ECE00F70CCF /* Debug */,
+				24889C8C27171ECE00F70CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24889C8D27171ECE00F70CCF /* Build configuration list for PBXNativeTarget "SamplePaymentSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24889C8E27171ECE00F70CCF /* Debug */,
+				24889C8F27171ECE00F70CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24889C7B27171ECE00F70CCF /* Project object */;
+}

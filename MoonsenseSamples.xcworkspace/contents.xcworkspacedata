@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SampleApp/SampleApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SamplePaymentApp/SamplePaymentApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SamplePaymentSDK/SamplePaymentSDK.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -40,8 +40,8 @@
 
 /* Begin PBXFileReference section */
 		245DB37D26FA545B003A5B73 /* SampleApp-Static.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SampleApp-Static.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		24804E5326FCC6B100BF4CB1 /* MoonsenseSDK-static.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "MoonsenseSDK-static.xcframework"; sourceTree = SOURCE_ROOT; };
-		24804E5526FCC6D000BF4CB1 /* MoonsenseSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MoonsenseSDK.xcframework; sourceTree = SOURCE_ROOT; };
+		24804E5326FCC6B100BF4CB1 /* MoonsenseSDK-static.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "MoonsenseSDK-static.xcframework"; path = "../xcframeworks/MoonsenseSDK-static.xcframework"; sourceTree = SOURCE_ROOT; };
+		24804E5526FCC6D000BF4CB1 /* MoonsenseSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MoonsenseSDK.xcframework; path = ../xcframeworks/MoonsenseSDK.xcframework; sourceTree = SOURCE_ROOT; };
 		24E0512A26CED02800D243E0 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E0512D26CED02800D243E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E0512F26CED02800D243E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
