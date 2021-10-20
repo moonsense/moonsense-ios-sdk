@@ -72,7 +72,7 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
         swipeControl.delegate = self
 
         // Once the view is configured and prepared to present, start the Moonsense SDK Session
-        session = Moonsense.startSession(duration: Constants.sessionDuration, labels: [Constants.paymentSessionLabel])
+        session = try? Moonsense.startSession(duration: Constants.sessionDuration, labels: [Constants.paymentSessionLabel])
     }
 
     override func viewWillAppear(_ animated: Bool) {
