@@ -177,6 +177,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = "Moonsense, Inc.";
 				TargetAttributes = {
 					24889C4E2714BE2700F70CCF = {
 						CreatedOnToolsVersion = 13.0;

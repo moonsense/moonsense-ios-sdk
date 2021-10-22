@@ -149,6 +149,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = "Moonsense, Inc.";
 				TargetAttributes = {
 					24889C8327171ECE00F70CCF = {
 						CreatedOnToolsVersion = 13.0;

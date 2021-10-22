@@ -171,14 +171,12 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
     // MARK: - Gesture Recognizers
     private lazy var panRecognizer: UIPanGestureRecognizer = {
         let recognizer = UIPanGestureRecognizer(target: self, action: #selector(paymentViewPanned(recognizer:)))
-        recognizer.delegate = self
         return recognizer
     }()
 
     private lazy var doubleTapRecognizer: UITapGestureRecognizer = {
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(doubleTapped(recognizer:)))
         recognizer.numberOfTapsRequired = 2
-        recognizer.delegate = self
         return recognizer
     }()
 
@@ -246,15 +244,5 @@ extension PaymentViewController: SwipeToBuyViewDelegate {
                 animateTransitionIfNeeded(to: .closed, duration: Constants.animationDuration)
             }
         }
-    }
-}
-
-extension PaymentViewController: UIGestureRecognizerDelegate {
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        // Don't allow two pan gestures to operate together
-        if otherGestureRecognizer.isKind(of: UIPanGestureRecognizer.self) {
-            return false
-        }
-        return true
     }
 }
