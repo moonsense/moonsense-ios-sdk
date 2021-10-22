@@ -46,7 +46,6 @@ class SwipeToBuyView: UIView {
         view.layer.cornerRadius = view.bounds.width / 2
 
         let pangestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(recognizer:)))
-        pangestureRecognizer.delegate = self
         slider.addGestureRecognizer(pangestureRecognizer)
         slider.layer.cornerRadius = slider.bounds.width / 2
 
@@ -116,15 +115,5 @@ class SwipeToBuyView: UIView {
         default:
             ()
         }
-    }
-}
-
-extension SwipeToBuyView: UIGestureRecognizerDelegate {
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        // Don't allow two pan gestures to operate together
-        if otherGestureRecognizer.isKind(of: UIPanGestureRecognizer.self) {
-            return false
-        }
-        return true
     }
 }
