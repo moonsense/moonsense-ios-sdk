@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startSession(_ sender: Any) {
-        _ = Moonsense.startSession(duration: 30, labels: ["SampleApp"])
+        _ = try? Moonsense.startSession(duration: 30, labels: ["SampleApp"])
     }
 
     @IBAction func stopAllSessions(_ sender: Any) {

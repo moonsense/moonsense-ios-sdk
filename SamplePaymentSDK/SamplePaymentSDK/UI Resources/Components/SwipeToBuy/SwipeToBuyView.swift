@@ -21,6 +21,7 @@ class SwipeToBuyView: UIView {
 
     let nibName = "SwipeToBuyView"
 
+    @IBOutlet weak var disabledOverlay: UIView!
     @IBOutlet weak var swipeToBuyLabel: UILabel!
     @IBOutlet weak var slider: UIView!
     @IBOutlet weak var sliderImageView: UIImageView!
@@ -40,7 +41,7 @@ class SwipeToBuyView: UIView {
     }
 
     func commonInit() {
-        guard let view = loadViewFromNib() else { return }
+        guard let view = loadViewFromNib(nibName, owner: self) else { return }
         view.frame = self.bounds
         self.layer.cornerRadius = self.bounds.height / 2
         view.layer.cornerRadius = view.bounds.width / 2
@@ -49,12 +50,15 @@ class SwipeToBuyView: UIView {
         slider.addGestureRecognizer(pangestureRecognizer)
         slider.layer.cornerRadius = slider.bounds.width / 2
 
+        disabledOverlay.layer.cornerRadius = disabledOverlay.bounds.height / 2
+
+        setEnabled(shouldEnable: false)
+
         self.addSubview(view)
     }
 
-    func loadViewFromNib() -> UIView? {
-        let nib = UINib(nibName: nibName, bundle: Payment.frameworkBundle())
-        return nib.instantiate(withOwner: self, options: nil).first as? UIView
+    func setEnabled(shouldEnable: Bool) {
+        disabledOverlay.isHidden = shouldEnable
     }
 
     var animator = UIViewPropertyAnimator()

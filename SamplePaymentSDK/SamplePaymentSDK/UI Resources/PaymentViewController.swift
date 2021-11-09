@@ -12,7 +12,7 @@ import MoonsenseSDK
 // session while the view is displayed.
 class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
     private enum Constants {
-        static let paymentViewHeight = 300.0
+        static let paymentViewHeight = 391.0
         static let animationDuration = 0.5
 
         static let sessionDuration: TimeInterval = 60 * 60
@@ -35,8 +35,10 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var grabbyBar: UIView!
     @IBOutlet weak var swipeControl: SwipeToBuyView!
+    @IBOutlet weak var creditCardEntryView: CreditCardEntryView!
+    @IBOutlet weak var expiryEntryView: ExpiryEntryView!
+    @IBOutlet weak var cvvEntryView: CVVEntryView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
-
     @IBOutlet weak var paymentViewHeightConstraint: NSLayoutConstraint!
 
     // Settable properties for the PaymentViewController
@@ -46,6 +48,7 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
 
     private var swiped = false
     private var session: Session?
+    private var isKeyboardDisplayed = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,9 +70,17 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
         // Configure gesture recognizers
         paymentView.addGestureRecognizer(panRecognizer)
         paymentView.addGestureRecognizer(doubleTapRecognizer)
+        paymentView.addGestureRecognizer(singleTapRecognizer)
 
         // Set as the delegate for the SwipeToBuyView
         swipeControl.delegate = self
+
+        // Account for the keyboard
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+
+        // Watch for text changes
+        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: UITextField.textDidChangeNotification, object: nil)
 
         // Once the view is configured and prepared to present, start the Moonsense SDK Session
         session = try? Moonsense.startSession(duration: Constants.sessionDuration, labels: [Constants.paymentSessionLabel])
@@ -96,6 +107,31 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
+    }
+
+    // MARK: - Keyboard handler
+    @objc func keyboardWillShow(_ notification: Notification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if !isKeyboardDisplayed {
+                isKeyboardDisplayed = true
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(_ notification: Notification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if isKeyboardDisplayed {
+                isKeyboardDisplayed = false
+                self.view.frame.origin.y += keyboardSize.height
+            }
+        }
+    }
+
+    @objc func textDidChange(_ notification: Notification) {
+        swipeControl.setEnabled(shouldEnable: creditCardEntryView.isValid() &&
+                                expiryEntryView.isValid() &&
+                                cvvEntryView.isValid())
     }
 
     // MARK: - Animation handling
@@ -180,14 +216,27 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
         return recognizer
     }()
 
+    private lazy var singleTapRecognizer: UITapGestureRecognizer = {
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(singleTap(recognizer:)))
+        recognizer.numberOfTapsRequired = 1
+        return recognizer
+    }()
+
+    @objc private func singleTap(recognizer: UITapGestureRecognizer) {
+        // Dismiss keyboard on a single tap
+        self.view.endEditing(true)
+    }
+
     @objc private func doubleTapped(recognizer: UITapGestureRecognizer) {
         // Close the payment view on a double tap
+        self.view.endEditing(true)
         animateTransitionIfNeeded(to: .closed, duration: Constants.animationDuration)
     }
 
     @objc private func paymentViewPanned(recognizer: UIPanGestureRecognizer) {
         switch recognizer.state {
         case .began:
+            self.view.endEditing(true)
             animateTransitionIfNeeded(to: currentState.opposite, duration: Constants.animationDuration)
 
             // pause all animations, since the next event may be a pan changed

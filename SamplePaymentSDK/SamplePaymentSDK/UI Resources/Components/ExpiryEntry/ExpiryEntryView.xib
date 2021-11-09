@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExpiryEntryView" customModule="SamplePaymentSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="expiryTextView" destination="Pbk-si-99f" id="EJH-YP-mfy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="186" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="FAKE Expiration Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUj-nU-S9P">
+                    <rect key="frame" x="16" y="16" width="100.5" height="7"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="7" id="sfH-UT-zTt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fake Card Number" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Pbk-si-99f">
+                    <rect key="frame" x="15.5" y="27" width="150.5" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="xKE-oy-lwp"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="cc-number"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Pbk-si-99f" secondAttribute="trailing" constant="20" symbolic="YES" id="LGS-Ug-9Yf"/>
+                <constraint firstItem="PUj-nU-S9P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Twi-7c-KS3"/>
+                <constraint firstItem="PUj-nU-S9P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="b0T-Qx-Xvq"/>
+                <constraint firstItem="Pbk-si-99f" firstAttribute="top" secondItem="PUj-nU-S9P" secondAttribute="bottom" constant="4" id="dXD-UT-sVA"/>
+                <constraint firstItem="Pbk-si-99f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15.5" id="t9v-MC-cjD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="4.3478260869565224" y="155.35714285714286"/>
+        </view>
+    </objects>
+</document>
