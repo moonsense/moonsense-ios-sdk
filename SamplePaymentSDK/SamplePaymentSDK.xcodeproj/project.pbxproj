@@ -19,6 +19,13 @@
 		24889CA22717449300F70CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24889CA12717449300F70CCF /* Main.storyboard */; };
 		24889CAA2717492300F70CCF /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24889CA82717492300F70CCF /* Poppins-Regular.ttf */; };
 		24889CAB2717492300F70CCF /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24889CA92717492300F70CCF /* Poppins-SemiBold.ttf */; };
+		24AADF7F2739B76500474E5C /* CreditCardEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF7E2739B76500474E5C /* CreditCardEntryView.swift */; };
+		24AADF812739B77600474E5C /* CreditCardEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AADF802739B77600474E5C /* CreditCardEntryView.xib */; };
+		24AADF842739B81F00474E5C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF832739B81F00474E5C /* UIViewExtensions.swift */; };
+		24AADF882739C17100474E5C /* ExpiryEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF872739C17100474E5C /* ExpiryEntryView.swift */; };
+		24AADF8A2739C25800474E5C /* ExpiryEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AADF892739C25800474E5C /* ExpiryEntryView.xib */; };
+		24AADF8D2739C57200474E5C /* CVVEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF8B2739C57200474E5C /* CVVEntryView.swift */; };
+		24AADF8E2739C57200474E5C /* CVVEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AADF8C2739C57200474E5C /* CVVEntryView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,13 @@
 		24889CA82717492300F70CCF /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		24889CA92717492300F70CCF /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		24889CAC2717494600F70CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24AADF7E2739B76500474E5C /* CreditCardEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardEntryView.swift; sourceTree = "<group>"; };
+		24AADF802739B77600474E5C /* CreditCardEntryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardEntryView.xib; sourceTree = "<group>"; };
+		24AADF832739B81F00474E5C /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		24AADF872739C17100474E5C /* ExpiryEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiryEntryView.swift; sourceTree = "<group>"; };
+		24AADF892739C25800474E5C /* ExpiryEntryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpiryEntryView.xib; sourceTree = "<group>"; };
+		24AADF8B2739C57200474E5C /* CVVEntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVVEntryView.swift; sourceTree = "<group>"; };
+		24AADF8C2739C57200474E5C /* CVVEntryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CVVEntryView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +84,10 @@
 		24889C8627171ECE00F70CCF /* SamplePaymentSDK */ = {
 			isa = PBXGroup;
 			children = (
-				24889C9B27173DD700F70CCF /* UI Resources */,
-				24889C932717212900F70CCF /* Payment.swift */,
+				24AADF822739B80F00474E5C /* Extensions */,
 				24889CAC2717494600F70CCF /* Info.plist */,
+				24889C932717212900F70CCF /* Payment.swift */,
+				24889C9B27173DD700F70CCF /* UI Resources */,
 			);
 			path = SamplePaymentSDK;
 			sourceTree = "<group>";
@@ -89,13 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				2475870A2718CF6C003F2E60 /* Assets.xcassets */,
+				24AADF792739B6F700474E5C /* Components */,
 				24889CA7271748D000F70CCF /* Fonts */,
 				24889CA12717449300F70CCF /* Main.storyboard */,
 				24889C9F27173F2600F70CCF /* PaymentViewController.swift */,
 				24889C9D27173E3800F70CCF /* SDKOverlayWindow.swift */,
 				2475870C2719D2F3003F2E60 /* SDKOverlayWindowPresentable.swift */,
-				247587022718AE03003F2E60 /* SwipeToBuyView.swift */,
-				247587042718AE19003F2E60 /* SwipeToBuyView.xib */,
 				247587062718CA45003F2E60 /* UIColorExtensions.swift */,
 			);
 			path = "UI Resources";
@@ -108,6 +122,61 @@
 				24889CA92717492300F70CCF /* Poppins-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		24AADF792739B6F700474E5C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				24AADF7B2739B71800474E5C /* CreditCardEntry */,
+				24AADF7D2739B72F00474E5C /* CVVEntry */,
+				24AADF7C2739B72300474E5C /* ExpiryEntry */,
+				24AADF7A2739B70600474E5C /* SwipeToBuy */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		24AADF7A2739B70600474E5C /* SwipeToBuy */ = {
+			isa = PBXGroup;
+			children = (
+				247587022718AE03003F2E60 /* SwipeToBuyView.swift */,
+				247587042718AE19003F2E60 /* SwipeToBuyView.xib */,
+			);
+			path = SwipeToBuy;
+			sourceTree = "<group>";
+		};
+		24AADF7B2739B71800474E5C /* CreditCardEntry */ = {
+			isa = PBXGroup;
+			children = (
+				24AADF7E2739B76500474E5C /* CreditCardEntryView.swift */,
+				24AADF802739B77600474E5C /* CreditCardEntryView.xib */,
+			);
+			path = CreditCardEntry;
+			sourceTree = "<group>";
+		};
+		24AADF7C2739B72300474E5C /* ExpiryEntry */ = {
+			isa = PBXGroup;
+			children = (
+				24AADF872739C17100474E5C /* ExpiryEntryView.swift */,
+				24AADF892739C25800474E5C /* ExpiryEntryView.xib */,
+			);
+			path = ExpiryEntry;
+			sourceTree = "<group>";
+		};
+		24AADF7D2739B72F00474E5C /* CVVEntry */ = {
+			isa = PBXGroup;
+			children = (
+				24AADF8B2739C57200474E5C /* CVVEntryView.swift */,
+				24AADF8C2739C57200474E5C /* CVVEntryView.xib */,
+			);
+			path = CVVEntry;
+			sourceTree = "<group>";
+		};
+		24AADF822739B80F00474E5C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				24AADF832739B81F00474E5C /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +217,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = "Moonsense, Inc.";
 				TargetAttributes = {
 					24889C8327171ECE00F70CCF = {
@@ -180,8 +249,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				24889CAB2717492300F70CCF /* Poppins-SemiBold.ttf in Resources */,
+				24AADF8A2739C25800474E5C /* ExpiryEntryView.xib in Resources */,
 				247587052718AE19003F2E60 /* SwipeToBuyView.xib in Resources */,
+				24AADF812739B77600474E5C /* CreditCardEntryView.xib in Resources */,
 				24889CA22717449300F70CCF /* Main.storyboard in Resources */,
+				24AADF8E2739C57200474E5C /* CVVEntryView.xib in Resources */,
 				24889CAA2717492300F70CCF /* Poppins-Regular.ttf in Resources */,
 				2475870B2718CF6C003F2E60 /* Assets.xcassets in Resources */,
 			);
@@ -196,10 +268,14 @@
 			files = (
 				24889CA027173F2600F70CCF /* PaymentViewController.swift in Sources */,
 				2475870D2719D2F3003F2E60 /* SDKOverlayWindowPresentable.swift in Sources */,
+				24AADF842739B81F00474E5C /* UIViewExtensions.swift in Sources */,
 				247587032718AE03003F2E60 /* SwipeToBuyView.swift in Sources */,
 				24889C942717212900F70CCF /* Payment.swift in Sources */,
+				24AADF882739C17100474E5C /* ExpiryEntryView.swift in Sources */,
+				24AADF7F2739B76500474E5C /* CreditCardEntryView.swift in Sources */,
 				24889C9E27173E3800F70CCF /* SDKOverlayWindow.swift in Sources */,
 				247587072718CA45003F2E60 /* UIColorExtensions.swift in Sources */,
+				24AADF8D2739C57200474E5C /* CVVEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +424,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.moonsense.SamplePaymentSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = io.moonsense.MoonsenseSDK.SamplePaymentSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -378,7 +454,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.moonsense.SamplePaymentSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = io.moonsense.MoonsenseSDK.SamplePaymentSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;

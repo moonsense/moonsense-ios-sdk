@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "245DB36D26FA545B003A5B73"
-               BuildableName = "SampleApp-Static.app"
-               BlueprintName = "SampleApp-Static"
-               ReferencedContainer = "container:SampleApp.xcodeproj">
+               BlueprintIdentifier = "24889C8327171ECE00F70CCF"
+               BuildableName = "SamplePaymentSDK.framework"
+               BlueprintName = "SamplePaymentSDK"
+               ReferencedContainer = "container:SamplePaymentSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,23 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "245DB36D26FA545B003A5B73"
-            BuildableName = "SampleApp-Static.app"
-            BlueprintName = "SampleApp-Static"
-            ReferencedContainer = "container:SampleApp.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "MOONSENSE_ENVIRONMENT"
-            value = "development"
-            isEnabled = "NO">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -64,16 +47,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "245DB36D26FA545B003A5B73"
-            BuildableName = "SampleApp-Static.app"
-            BlueprintName = "SampleApp-Static"
-            ReferencedContainer = "container:SampleApp.xcodeproj">
+            BlueprintIdentifier = "24889C8327171ECE00F70CCF"
+            BuildableName = "SamplePaymentSDK.framework"
+            BlueprintName = "SamplePaymentSDK"
+            ReferencedContainer = "container:SamplePaymentSDK.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

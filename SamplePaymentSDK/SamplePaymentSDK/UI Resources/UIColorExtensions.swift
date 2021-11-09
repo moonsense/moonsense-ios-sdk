@@ -11,6 +11,7 @@ extension UIColor {
 
     enum MoonsenseColors {
         static let success = UIColor.init(rgb: 0x1FCC5F)
+        static let purple = UIColor.init(rgb: 0xB780FF)
     }
 
     convenience init(red: Int, green: Int, blue: Int) {

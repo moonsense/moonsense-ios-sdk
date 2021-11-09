@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Poppins-Regular.ttf">
-            <string>Poppins-Regular</string>
-        </array>
         <array key="Poppins-SemiBold.ttf">
             <string>Poppins-SemiBold</string>
         </array>
@@ -31,19 +28,10 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kJ-y8-H52" userLabel="PaymentView">
-                                <rect key="frame" x="0.0" y="596" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="505" width="414" height="391"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAk-iE-o1j">
-                                        <rect key="frame" x="20" y="40" width="40" height="28"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="2BX-ht-INI"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHh-Zh-fY6">
-                                        <rect key="frame" x="20" y="97" width="41" height="28"/>
+                                        <rect key="frame" x="20" y="188" width="41" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="prK-Av-YlZ"/>
                                         </constraints>
@@ -51,24 +39,15 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxx xxxx xxxx 3981" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8m-RL-32T">
-                                        <rect key="frame" x="254" y="40" width="140" height="28"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="ryp-mo-ZDd"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KxC-WR-asn" userLabel="Separator Line">
-                                        <rect key="frame" x="20" y="83" width="374" height="1"/>
+                                        <rect key="frame" x="20" y="174" width="374" height="1"/>
                                         <color key="backgroundColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="o83-fg-sBV"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$11.98" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDt-L7-HpQ">
-                                        <rect key="frame" x="254" y="97" width="140" height="28"/>
+                                        <rect key="frame" x="254" y="188" width="140" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="3Bl-Iq-dcA"/>
                                             <constraint firstAttribute="height" constant="28" id="bBy-KR-06X"/>
@@ -91,41 +70,68 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J7b-v9-LFV" userLabel="Swipe To Buy" customClass="SwipeToBuyView" customModule="SamplePaymentSDK" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="165" width="374" height="64"/>
+                                        <rect key="frame" x="20" y="256" width="374" height="64"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="NDA-Fv-YXK"/>
                                         </constraints>
                                     </view>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="dkL-60-g08">
-                                        <rect key="frame" x="197" y="187" width="20" height="20"/>
+                                        <rect key="frame" x="197" y="278" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="RhT-t5-nUJ"/>
                                             <constraint firstAttribute="height" constant="20" id="f3W-jo-0vm"/>
                                         </constraints>
                                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </activityIndicatorView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r96-KF-AnW" userLabel="Fake Credit Card Entry View" customClass="CreditCardEntryView" customModule="SamplePaymentSDK" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="24" width="374" height="64"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="w8L-y8-Ma4"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-Rp-4Sz" customClass="ExpiryEntryView" customModule="SamplePaymentSDK" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="100" width="177" height="64"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="3Os-2O-JLE"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEF-Ub-u9D" customClass="CVVEntryView" customModule="SamplePaymentSDK" customModuleProvider="target">
+                                        <rect key="frame" x="217" y="100" width="177" height="64"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="f88-Ly-7aC"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="rA1-N4-69v"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailingMargin" secondItem="R8m-RL-32T" secondAttribute="trailing" constant="12" id="1Ba-qp-gK7"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="DDt-L7-HpQ" secondAttribute="trailing" constant="12" id="4ta-bv-f8F"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="KxC-WR-asn" secondAttribute="trailing" constant="12" id="7mV-Ji-ASs"/>
-                                    <constraint firstItem="ZAk-iE-o1j" firstAttribute="top" secondItem="6kJ-y8-H52" secondAttribute="topMargin" constant="32" id="8Z5-zC-ZDo"/>
                                     <constraint firstItem="dkL-60-g08" firstAttribute="centerX" secondItem="6kJ-y8-H52" secondAttribute="centerX" id="Aoz-sG-xe5"/>
-                                    <constraint firstAttribute="height" constant="300" id="DGk-9M-Tlu"/>
+                                    <constraint firstAttribute="height" constant="391" id="DGk-9M-Tlu"/>
                                     <constraint firstAttribute="topMargin" secondItem="nOa-r5-KWY" secondAttribute="top" id="IXe-bo-gnN"/>
+                                    <constraint firstItem="iEF-Ub-u9D" firstAttribute="leading" secondItem="6kJ-y8-H52" secondAttribute="leading" constant="217" id="IYj-E4-7hu"/>
+                                    <constraint firstAttribute="trailing" secondItem="r96-KF-AnW" secondAttribute="trailing" constant="20" symbolic="YES" id="Kvh-AU-rRM"/>
                                     <constraint firstAttribute="trailing" secondItem="J7b-v9-LFV" secondAttribute="trailing" constant="20" symbolic="YES" id="Ovb-F1-jko"/>
                                     <constraint firstItem="DDt-L7-HpQ" firstAttribute="top" secondItem="KxC-WR-asn" secondAttribute="bottom" constant="13" id="Pmo-h6-TSQ"/>
+                                    <constraint firstItem="r96-KF-AnW" firstAttribute="top" secondItem="6kJ-y8-H52" secondAttribute="top" constant="24" id="PpH-wq-vHi"/>
+                                    <constraint firstItem="f8C-Rp-4Sz" firstAttribute="top" secondItem="r96-KF-AnW" secondAttribute="bottom" constant="12" id="RCB-DZ-z8s"/>
+                                    <constraint firstItem="KxC-WR-asn" firstAttribute="top" secondItem="f8C-Rp-4Sz" secondAttribute="bottom" constant="10" id="RV9-9d-7De"/>
+                                    <constraint firstAttribute="trailing" secondItem="iEF-Ub-u9D" secondAttribute="trailing" constant="20" symbolic="YES" id="STE-eD-VmW"/>
                                     <constraint firstItem="bHh-Zh-fY6" firstAttribute="leading" secondItem="6kJ-y8-H52" secondAttribute="leadingMargin" constant="12" id="TB5-oR-nA1"/>
                                     <constraint firstItem="J7b-v9-LFV" firstAttribute="leading" secondItem="6kJ-y8-H52" secondAttribute="leading" constant="20" symbolic="YES" id="UCr-6R-v1T"/>
+                                    <constraint firstItem="iEF-Ub-u9D" firstAttribute="top" secondItem="r96-KF-AnW" secondAttribute="bottom" constant="12" id="Uxu-03-7Gs"/>
                                     <constraint firstItem="bHh-Zh-fY6" firstAttribute="top" secondItem="KxC-WR-asn" secondAttribute="bottom" constant="13" id="VsN-s6-xgy"/>
                                     <constraint firstItem="J7b-v9-LFV" firstAttribute="top" secondItem="bHh-Zh-fY6" secondAttribute="bottom" constant="40" id="XWs-UA-mIL"/>
-                                    <constraint firstItem="KxC-WR-asn" firstAttribute="top" secondItem="ZAk-iE-o1j" secondAttribute="bottom" constant="15" id="dxk-6I-U6x"/>
+                                    <constraint firstItem="iEF-Ub-u9D" firstAttribute="leading" secondItem="f8C-Rp-4Sz" secondAttribute="trailing" constant="20" id="eYp-cy-GXA"/>
                                     <constraint firstItem="dkL-60-g08" firstAttribute="top" secondItem="DDt-L7-HpQ" secondAttribute="bottom" constant="62" id="iIu-ds-nzc"/>
                                     <constraint firstItem="nOa-r5-KWY" firstAttribute="centerX" secondItem="6kJ-y8-H52" secondAttribute="centerX" id="jjj-su-AI0"/>
-                                    <constraint firstItem="R8m-RL-32T" firstAttribute="top" secondItem="6kJ-y8-H52" secondAttribute="topMargin" constant="32" id="vWN-cd-u9U"/>
-                                    <constraint firstItem="ZAk-iE-o1j" firstAttribute="leading" secondItem="6kJ-y8-H52" secondAttribute="leadingMargin" constant="12" id="xIz-jo-ULu"/>
+                                    <constraint firstItem="f8C-Rp-4Sz" firstAttribute="leading" secondItem="6kJ-y8-H52" secondAttribute="leading" constant="20" id="mAI-VD-pps"/>
+                                    <constraint firstItem="r96-KF-AnW" firstAttribute="leading" secondItem="6kJ-y8-H52" secondAttribute="leading" constant="20" symbolic="YES" id="pGt-yV-MmC"/>
                                     <constraint firstItem="KxC-WR-asn" firstAttribute="leading" secondItem="6kJ-y8-H52" secondAttribute="leadingMargin" constant="12" id="yDg-v2-4ZD"/>
                                 </constraints>
                             </view>
@@ -143,6 +149,9 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="blurredView" destination="oZv-4W-bD3" id="Fid-f1-VhI"/>
+                        <outlet property="creditCardEntryView" destination="r96-KF-AnW" id="Rx8-ja-xlm"/>
+                        <outlet property="cvvEntryView" destination="iEF-Ub-u9D" id="xsS-1L-1FH"/>
+                        <outlet property="expiryEntryView" destination="f8C-Rp-4Sz" id="2E6-Dh-x0r"/>
                         <outlet property="grabbyBar" destination="nOa-r5-KWY" id="fnA-LZ-hRe"/>
                         <outlet property="paymentView" destination="6kJ-y8-H52" id="Jcg-hZ-gPd"/>
                         <outlet property="paymentViewHeightConstraint" destination="DGk-9M-Tlu" id="Zhe-dl-wUq"/>
