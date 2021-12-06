@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository hosts the releases of the Moonsense iOS SDK. Two variants of the Moonsense iOS SDK are available, a dynamically linked `.xcframework` and a statically linked `.xcframework`. This repository also holds sample applications that demonstrate the use of the Moonsense SDK for iOS.
+This repository hosts the `Package.swift` Swift Package Manager file for the Moonsense iOS SDK. The Moonsense iOS SDK is available as two variants: a dynamically linked `.xcframework` and a statically linked `.xcframework`. This repository also hosts sample applications that demonstrate the use of the Moonsense iOS SDK.
 
 ### `MoonsenseSDK.xcframework`
 
@@ -15,7 +15,6 @@ The `MoonsenseSDK-static.xcframework` contains the statically linked variant of 
 ## TLDR
 
 - Clone this repository.
-- Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` release assets from the [Github Releases page](https://github.com/moonsense/moonsense-ios-sdk/releases). Unzip the `*.xcframework.zip` artifacts and drag them into the `<CLONE_DIR>/xcframeworks` folder using the Finder application.
 - Create a public token on the [Moonsense Console](https://console.moonsense.cloud/) for your application.
 - Add the public token to the `publicToken` variable in `ViewController.swift` in the `SampleApp`.
 - Run the `SampleApp` on your iOS device.
@@ -32,11 +31,41 @@ The latest release of the SDK is `0.1.0-alpha5`. Details about the current and p
 
 ## Integration
 
-This repository is currently invite only and thus it is a Private GitHub repository. There is an issue with Swift Package Manager where it cannot download artifacts from Release artifacts in private Github repositories. We are investigating other solutions for storing the release artifacts but until that is resolved, the SDK must be installed manually.
+#### Configuring `.netrc` for Authorizing Downloads
 
-Download the `MoonsenseSDK.xcframework.zip` and `MoonsenseSDK-static.xcframework.zip` artifacts from the [`0.1.0-alpha5` release](https://github.com/moonsense/moonsense-ios-sdk/releases/tag/0.1.0-alpha2). Unzip the files and drop the file into the `<CLONE_DIR>/xcframeworks` folder using the Finder application.
+Downloading the Moonsense iOS SDK artifacts requires an authorization token for `dl.cloudsmith.io`. This token is associated to your Moonsense Account and can be found in the Moonsense Console. Add the following to your `~/.netrc` file:
 
-In the near future, once the artifact is being stored outside of the Github release, Swift Package Manager will be supported.
+```
+machine dl.cloudsmith.io
+  login token
+  password <YOUR_TOKEN_HERE>
+  protocol https
+
+```
+
+### Swift Package Manager
+
+The Moonsense iOS SDK is available as a Swift Package. Simply use the the link to this repo, https://github.com/moonsense/moonsense-ios-sdk, as the Package URL when adding the Swift Package to your project.
+
+### Cocoapods
+
+Cocoapods distribution is not currently avaibale but will be supported in an upcoming release.
+
+### Manual Integration
+
+The `MoonsenseSDK.xcframework.zip`, `MoonsenseSDK-static.xcframework.zip` and `MoonsenseSDK.doccarchive.zip` artifacts can also be manually integrated into your project. You can download the latest versions from the following links:
+
+* [`MoonsenseSDK.xcframework.zip`](https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0-alpha5/MoonsenseSDK.xcframework.zip)
+* [`MoonsenseSDK-static.xcframework.zip`](https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/0.1.0-alpha5/MoonsenseSDK-static.xcframework.zip)
+* [`MoonsenseSDK.doccarchive.zip`](https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK.doccarchive/versions/0.1.0-alpha5/MoonsenseSDK.doccarchive.zip)
+
+Once downloaded, unzip the files and drop the expanded files into your project.
+
+*Note:* The downloads require the authorization token as outlined above. For best results download the artifacts using `curl` with the `-n` option. For example:
+
+```
+curl -n -o MoonsenseSDK.xcframework.zip https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0-alpha5/MoonsenseSDK.xcframework.zip
+```
 
 ## Usage
 
