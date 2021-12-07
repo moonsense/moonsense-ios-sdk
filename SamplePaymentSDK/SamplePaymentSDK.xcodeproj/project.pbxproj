@@ -26,6 +26,7 @@
 		24AADF8A2739C25800474E5C /* ExpiryEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AADF892739C25800474E5C /* ExpiryEntryView.xib */; };
 		24AADF8D2739C57200474E5C /* CVVEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF8B2739C57200474E5C /* CVVEntryView.swift */; };
 		24AADF8E2739C57200474E5C /* CVVEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AADF8C2739C57200474E5C /* CVVEntryView.xib */; };
+		24AADF9F273DC34200474E5C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF9E273DC34200474E5C /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		24AADF892739C25800474E5C /* ExpiryEntryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpiryEntryView.xib; sourceTree = "<group>"; };
 		24AADF8B2739C57200474E5C /* CVVEntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVVEntryView.swift; sourceTree = "<group>"; };
 		24AADF8C2739C57200474E5C /* CVVEntryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CVVEntryView.xib; sourceTree = "<group>"; };
+		24AADF9E273DC34200474E5C /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				24AADF832739B81F00474E5C /* UIViewExtensions.swift */,
+				24AADF9E273DC34200474E5C /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				247587032718AE03003F2E60 /* SwipeToBuyView.swift in Sources */,
 				24889C942717212900F70CCF /* Payment.swift in Sources */,
 				24AADF882739C17100474E5C /* ExpiryEntryView.swift in Sources */,
+				24AADF9F273DC34200474E5C /* StringExtensions.swift in Sources */,
 				24AADF7F2739B76500474E5C /* CreditCardEntryView.swift in Sources */,
 				24889C9E27173E3800F70CCF /* SDKOverlayWindow.swift in Sources */,
 				247587072718CA45003F2E60 /* UIColorExtensions.swift in Sources */,

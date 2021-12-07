@@ -48,7 +48,6 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
 
     private var swiped = false
     private var session: Session?
-    private var isKeyboardDisplayed = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -111,21 +110,22 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
 
     // MARK: - Keyboard handler
     @objc func keyboardWillShow(_ notification: Notification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            if !isKeyboardDisplayed {
-                isKeyboardDisplayed = true
-                self.view.frame.origin.y -= keyboardSize.height
-            }
+        guard let userInfo = notification.userInfo else {
+            return
+
+        }
+        let keyboardScreenEndFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboard = self.view.convert(keyboardScreenEndFrame, from: self.view.window)
+        let height = self.view.frame.size.height
+        let isHardwareKeyboard = keyboard.size == .zero || ((keyboard.origin.y + keyboard.size.height) > height) || keyboard.size.height < 100
+
+        if !isHardwareKeyboard {
+            self.view.frame.origin.y = 0.0 - keyboardScreenEndFrame.height
         }
     }
 
     @objc func keyboardWillHide(_ notification: Notification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            if isKeyboardDisplayed {
-                isKeyboardDisplayed = false
-                self.view.frame.origin.y += keyboardSize.height
-            }
-        }
+        self.view.frame.origin.y = 0
     }
 
     @objc func textDidChange(_ notification: Notification) {
