@@ -15,3 +15,5 @@ xcuserdata/
 # Ignore the Moonsense frameworks
 MoonsenseSDK.xcframework
 MoonsenseSDK-static.xcframework
+
+Package.resolved

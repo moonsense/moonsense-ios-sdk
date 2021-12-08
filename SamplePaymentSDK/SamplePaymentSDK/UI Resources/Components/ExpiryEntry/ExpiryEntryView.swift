@@ -97,6 +97,10 @@ extension ExpiryEntryView: UITextFieldDelegate {
     }
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if !string.isEmpty && !string.replacingOccurrences(of: "/", with: "").isNumeric {
+            return false
+        }
+
         let newLength = (textField.text ?? "").count + string.count - range.length
         return newLength <= Constants.validExpiryLength
     }

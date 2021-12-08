@@ -12,13 +12,13 @@
 		247587072718CA45003F2E60 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247587062718CA45003F2E60 /* UIColorExtensions.swift */; };
 		2475870B2718CF6C003F2E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2475870A2718CF6C003F2E60 /* Assets.xcassets */; };
 		2475870D2719D2F3003F2E60 /* SDKOverlayWindowPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475870C2719D2F3003F2E60 /* SDKOverlayWindowPresentable.swift */; };
-		24889C9227171F2800F70CCF /* MoonsenseSDK-static.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24889C9127171F2800F70CCF /* MoonsenseSDK-static.xcframework */; };
 		24889C942717212900F70CCF /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24889C932717212900F70CCF /* Payment.swift */; };
 		24889C9E27173E3800F70CCF /* SDKOverlayWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24889C9D27173E3800F70CCF /* SDKOverlayWindow.swift */; };
 		24889CA027173F2600F70CCF /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24889C9F27173F2600F70CCF /* PaymentViewController.swift */; };
 		24889CA22717449300F70CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24889CA12717449300F70CCF /* Main.storyboard */; };
 		24889CAA2717492300F70CCF /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24889CA82717492300F70CCF /* Poppins-Regular.ttf */; };
 		24889CAB2717492300F70CCF /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24889CA92717492300F70CCF /* Poppins-SemiBold.ttf */; };
+		249A3043275E73660088D37A /* MoonsenseSDK-static in Frameworks */ = {isa = PBXBuildFile; productRef = 249A3042275E73660088D37A /* MoonsenseSDK-static */; };
 		24AADF7F2739B76500474E5C /* CreditCardEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF7E2739B76500474E5C /* CreditCardEntryView.swift */; };
 		24AADF812739B77600474E5C /* CreditCardEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AADF802739B77600474E5C /* CreditCardEntryView.xib */; };
 		24AADF842739B81F00474E5C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF832739B81F00474E5C /* UIViewExtensions.swift */; };
@@ -26,6 +26,7 @@
 		24AADF8A2739C25800474E5C /* ExpiryEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AADF892739C25800474E5C /* ExpiryEntryView.xib */; };
 		24AADF8D2739C57200474E5C /* CVVEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF8B2739C57200474E5C /* CVVEntryView.swift */; };
 		24AADF8E2739C57200474E5C /* CVVEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AADF8C2739C57200474E5C /* CVVEntryView.xib */; };
+		24AADF9F273DC34200474E5C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF9E273DC34200474E5C /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +36,6 @@
 		2475870A2718CF6C003F2E60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2475870C2719D2F3003F2E60 /* SDKOverlayWindowPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKOverlayWindowPresentable.swift; sourceTree = "<group>"; };
 		24889C8427171ECE00F70CCF /* SamplePaymentSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SamplePaymentSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24889C9127171F2800F70CCF /* MoonsenseSDK-static.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "MoonsenseSDK-static.xcframework"; path = "../xcframeworks/MoonsenseSDK-static.xcframework"; sourceTree = SOURCE_ROOT; };
 		24889C932717212900F70CCF /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		24889C9D27173E3800F70CCF /* SDKOverlayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKOverlayWindow.swift; sourceTree = "<group>"; };
 		24889C9F27173F2600F70CCF /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +50,7 @@
 		24AADF892739C25800474E5C /* ExpiryEntryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpiryEntryView.xib; sourceTree = "<group>"; };
 		24AADF8B2739C57200474E5C /* CVVEntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVVEntryView.swift; sourceTree = "<group>"; };
 		24AADF8C2739C57200474E5C /* CVVEntryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CVVEntryView.xib; sourceTree = "<group>"; };
+		24AADF9E273DC34200474E5C /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24889C9227171F2800F70CCF /* MoonsenseSDK-static.xcframework in Frameworks */,
+				249A3043275E73660088D37A /* MoonsenseSDK-static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +70,6 @@
 			children = (
 				24889C8627171ECE00F70CCF /* SamplePaymentSDK */,
 				24889C8527171ECE00F70CCF /* Products */,
-				24889C9027171F2800F70CCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,14 +90,6 @@
 				24889C9B27173DD700F70CCF /* UI Resources */,
 			);
 			path = SamplePaymentSDK;
-			sourceTree = "<group>";
-		};
-		24889C9027171F2800F70CCF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				24889C9127171F2800F70CCF /* MoonsenseSDK-static.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		24889C9B27173DD700F70CCF /* UI Resources */ = {
@@ -175,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				24AADF832739B81F00474E5C /* UIViewExtensions.swift */,
+				24AADF9E273DC34200474E5C /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,6 +199,9 @@
 			dependencies = (
 			);
 			name = SamplePaymentSDK;
+			packageProductDependencies = (
+				249A3042275E73660088D37A /* MoonsenseSDK-static */,
+			);
 			productName = SamplePaymentSDK;
 			productReference = 24889C8427171ECE00F70CCF /* SamplePaymentSDK.framework */;
 			productType = "com.apple.product-type.framework";
@@ -234,6 +230,9 @@
 				Base,
 			);
 			mainGroup = 24889C7A27171ECE00F70CCF;
+			packageReferences = (
+				249A3041275E73660088D37A /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */,
+			);
 			productRefGroup = 24889C8527171ECE00F70CCF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -272,6 +271,7 @@
 				247587032718AE03003F2E60 /* SwipeToBuyView.swift in Sources */,
 				24889C942717212900F70CCF /* Payment.swift in Sources */,
 				24AADF882739C17100474E5C /* ExpiryEntryView.swift in Sources */,
+				24AADF9F273DC34200474E5C /* StringExtensions.swift in Sources */,
 				24AADF7F2739B76500474E5C /* CreditCardEntryView.swift in Sources */,
 				24889C9E27173E3800F70CCF /* SDKOverlayWindow.swift in Sources */,
 				247587072718CA45003F2E60 /* UIColorExtensions.swift in Sources */,
@@ -486,6 +486,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		249A3041275E73660088D37A /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/moonsense/moonsense-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		249A3042275E73660088D37A /* MoonsenseSDK-static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 249A3041275E73660088D37A /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */;
+			productName = "MoonsenseSDK-static";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24889C7B27171ECE00F70CCF /* Project object */;
 }
