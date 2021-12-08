@@ -21,7 +21,7 @@ The `MoonsenseSDK-static.xcframework` contains the statically linked variant of 
 
 ## Version History
 
-The latest release of the SDK is `0.1.0-alpha5`. Details about the current and past releases can be found [here](https://github.com/moonsense/moonsense-ios-sdk/releases/).
+The latest release of the SDK is `0.1.0`. Details about the current and past releases can be found [here](https://github.com/moonsense/moonsense-ios-sdk/releases/).
 
 ## Prerequisites
 
@@ -55,16 +55,16 @@ Cocoapods distribution is not currently avaibale but will be supported in an upc
 
 The `MoonsenseSDK.xcframework.zip`, `MoonsenseSDK-static.xcframework.zip` and `MoonsenseSDK.doccarchive.zip` artifacts can also be manually integrated into your project. You can download the latest versions from the following links:
 
-* [`MoonsenseSDK.xcframework.zip`](https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0-alpha5/MoonsenseSDK.xcframework.zip)
-* [`MoonsenseSDK-static.xcframework.zip`](https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/0.1.0-alpha5/MoonsenseSDK-static.xcframework.zip)
-* [`MoonsenseSDK.doccarchive.zip`](https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK.doccarchive/versions/0.1.0-alpha5/MoonsenseSDK.doccarchive.zip)
+* [`MoonsenseSDK.xcframework.zip`](https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0/MoonsenseSDK.xcframework.zip)
+* [`MoonsenseSDK-static.xcframework.zip`](https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/0.1.0/MoonsenseSDK-static.xcframework.zip)
+* [`MoonsenseSDK.doccarchive.zip`](https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK.doccarchive/versions/0.1.0/MoonsenseSDK.doccarchive.zip)
 
 Once downloaded, unzip the files and drop the expanded files into your project.
 
 *Note:* The downloads require the authorization token as outlined above. For best results download the artifacts using `curl` with the `-n` option. For example:
 
 ```
-curl -n -o MoonsenseSDK.xcframework.zip https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0-alpha5/MoonsenseSDK.xcframework.zip
+curl -n -o MoonsenseSDK.xcframework.zip https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0/MoonsenseSDK.xcframework.zip
 ```
 
 ## Usage
