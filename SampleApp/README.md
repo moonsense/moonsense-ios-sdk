@@ -1,6 +1,6 @@
 # Moonsense iOS SampleApp
 
-The `SampleApp` project demonstrates the use of the Moonsense iOS SDK within a simple application. The example in this case is quite simple and minimal and can serve as a good starting point for developers looking for a quick integration. The `SampleApp` Xcode project contains two targets, `SampleApp` and `SampleApp-Static`. The `SampleApp` target consumes the `MoonsenseSDK.xcframework` dynamically linked variant. The `SampleApp-Static` target consumes the `MoonsneseSDK-static.xcframework` target.
+The `SampleApp` project demonstrates the use of the Moonsense iOS SDK within a simple application. The example in this case is quite simple and minimal and can serve as a good starting point for developers looking for a quick integration. The `SampleApp` Xcode project contains two targets, `SampleApp` and `SampleApp-Static`. The `SampleApp` target consumes the `MoonsenseSDK.xcframework` dynamically linked variant. The `SampleApp-Static` target consumes the `MoonsenseSDK-static.xcframework` target.
 
 ## Prerequisites
 

@@ -49,7 +49,7 @@ The Moonsense iOS SDK is available as a Swift Package. Simply use the the link t
 
 ### Cocoapods
 
-Cocoapods distribution is not currently avaibale but will be supported in an upcoming release.
+Cocoapods distribution is not currently available but will be supported in an upcoming release.
 
 ### Manual Integration
 
@@ -82,7 +82,7 @@ Once initialized you can use the `startSession()` and `stopAllSessions()` method
 
 This repo includes two sample apps and a sample SDK accessible from the `MoonsenseSamples.xcworkspace` Xcode Workspace:
 
-- [`SampleApp`](SampleApp) - This sample app demonstrates the use of the Moonsense iOS SDK within a simple application. The example in this case is quite simple and minimal and can serve as a good starting point for developers looking for a quick integration. The `SampleApp` Xcode project contains two targets, `SampleApp` and `SampleApp-Static`. The `SampleApp` target consumes the `MoonsenseSDK.xcframework` dynamically linked variant. The `SampleApp-Static` target consumes the `MoonsneseSDK-static.xcframework` target.
+- [`SampleApp`](SampleApp) - This sample app demonstrates the use of the Moonsense iOS SDK within a simple application. The example in this case is quite simple and minimal and can serve as a good starting point for developers looking for a quick integration. The `SampleApp` Xcode project contains two targets, `SampleApp` and `SampleApp-Static`. The `SampleApp` target consumes the `MoonsenseSDK.xcframework` dynamically linked variant. The `SampleApp-Static` target consumes the `MoonsenseSDK-static.xcframework` target.
 - [`SamplePaymentApp`](SamplePaymentApp) - This sample app demonstrates the library usage of the Moonsense iOS SDK. Note that the `SamplePaymentApp` does not directly depend on the Moonsense iOS SDK. Instead it includes a dependency to the [`SamplePaymentSDK`](SamplePaymentSDK) which consumes the Moonsense iOS SDK statically linked variant. The app developer here does not have any visibility into the Moonsense iOS SDK as they only interface with the `SamplePaymentSDK`. The example is useful for SDK/library developers looking to integrate the Moonsense iOS SDK.
 
 ## Terms Of Service
