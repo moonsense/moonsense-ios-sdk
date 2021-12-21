@@ -15,6 +15,7 @@ The `MoonsenseSDK-static.xcframework` contains the statically linked variant of 
 ## TLDR
 
 - Clone this repository.
+- Configure your `.netrc` file with your `REPO_ACCESS_TOKEN`.
 - Create a public token on the [Moonsense Console](https://console.moonsense.cloud/) for your application.
 - Add the public token to the `publicToken` variable in `ViewController.swift` in the `SampleApp`.
 - Run the `SampleApp` on your iOS device.
