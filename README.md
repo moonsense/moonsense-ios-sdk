@@ -16,6 +16,7 @@ The `MoonsenseSDK-static.xcframework` contains the statically linked variant of 
 
 - Clone this repository.
 - Configure your `.netrc` file with your `REPO_ACCESS_TOKEN`.
+- Open the `MoonsenseSamples.xcworkspace` Xcode workspace in Xcode.
 - Create a public token on the [Moonsense Console](https://console.moonsense.cloud/) for your application.
 - Add the public token to the `publicToken` variable in `ViewController.swift` in the `SampleApp`.
 - Run the `SampleApp` on your iOS device.
@@ -80,6 +81,8 @@ The SDK needs to be initialized before it can be used. Call the [`Moonsense.init
 The [`initialize(publicToken:delegate:)`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/moonsense/initialize(publictoken:delegate:)) method also accepts an optional [`MoonsenseDelegate`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/moonsensedelegate) to receive events from the SDK.
 
 Once initialized you can use the [`startSession()`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/moonsense/startsession(duration:labels:clientsessiongroupid:)) and [`stopAllSessions()`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/moonsense/stopallsessions()) methods to start and stop recording sessions respectively. If you need finer control over stopping individual sessions, the [`startSession()`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/moonsense/startsession(duration:labels:clientsessiongroupid:)) call returns a [`Session`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/session) object that includes a [`stopSession()`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/session/stopsession()) method.
+
+## Sample Applications
 
 This repo includes two sample apps and a sample SDK accessible from the `MoonsenseSamples.xcworkspace` Xcode Workspace:
 
