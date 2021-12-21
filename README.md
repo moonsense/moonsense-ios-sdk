@@ -15,6 +15,8 @@ The `MoonsenseSDK-static.xcframework` contains the statically linked variant of 
 ## TLDR
 
 - Clone this repository.
+- Configure your `.netrc` file with your `REPO_ACCESS_TOKEN`.
+- Open the `MoonsenseSamples.xcworkspace` Xcode workspace in Xcode.
 - Create a public token on the [Moonsense Console](https://console.moonsense.cloud/) for your application.
 - Add the public token to the `publicToken` variable in `ViewController.swift` in the `SampleApp`.
 - Run the `SampleApp` on your iOS device.
@@ -33,12 +35,12 @@ The latest release of the SDK is `0.1.0`. Details about the current and past rel
 
 #### Configuring `.netrc` for Authorizing Downloads
 
-Downloading the Moonsense iOS SDK artifacts requires an authorization token for `dl.cloudsmith.io`. This token is associated to your Moonsense Account and can be found in the Moonsense Console. Add the following to your `~/.netrc` file:
+Downloading the Moonsense iOS SDK artifacts requires a `REPO_ACCESS_TOKEN` for `dl.moonsense.io`. This token is associated to your Moonsense Account and should have been provided to you. In case you do not have one contact [support@moonsense.io](mailto:support@moonsense.io). Add the following to your `~/.netrc` file:
 
 ```
-machine dl.cloudsmith.io
+machine dl.moonsense.io
   login token
-  password <YOUR_TOKEN_HERE>
+  password <REPO_ACCESS_TOKEN>
   protocol https
 
 ```
@@ -55,35 +57,37 @@ Cocoapods distribution is not currently available but will be supported in an up
 
 The `MoonsenseSDK.xcframework.zip`, `MoonsenseSDK-static.xcframework.zip` and `MoonsenseSDK.doccarchive.zip` artifacts can also be manually integrated into your project. You can download the latest versions from the following links:
 
-* [`MoonsenseSDK.xcframework.zip`](https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0/MoonsenseSDK.xcframework.zip)
-* [`MoonsenseSDK-static.xcframework.zip`](https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/0.1.0/MoonsenseSDK-static.xcframework.zip)
-* [`MoonsenseSDK.doccarchive.zip`](https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK.doccarchive/versions/0.1.0/MoonsenseSDK.doccarchive.zip)
+* [`MoonsenseSDK.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0/MoonsenseSDK.xcframework.zip)
+* [`MoonsenseSDK-static.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/0.1.0/MoonsenseSDK-static.xcframework.zip)
+* [`MoonsenseSDK.doccarchive.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.doccarchive/versions/0.1.0/MoonsenseSDK.doccarchive.zip)
 
 Once downloaded, unzip the files and drop the expanded files into your project.
 
 *Note:* The downloads require the authorization token as outlined above. For best results download the artifacts using `curl` with the `-n` option. For example:
 
 ```
-curl -n -o MoonsenseSDK.xcframework.zip https://dl.cloudsmith.io/basic/moonsense/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0/MoonsenseSDK.xcframework.zip
+curl -n -o MoonsenseSDK.xcframework.zip https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0/MoonsenseSDK.xcframework.zip
 ```
 
 ## Usage
 
-The SDK needs to be initialized before it can be used. Call the `Moonsense.initialize(publicToken:delegate:)` method prior to recording. The `initialize(publicToken:delegate:)` method requires a `publicToken` that can be generated using the [Moonsense Console](https://console.moonsense.cloud/). In order to obtain a token you need to:
+The SDK needs to be initialized before it can be used. Call the [`Moonsense.initialize(publicToken:delegate:)`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/moonsense/initialize(publictoken:delegate:)) method prior to recording. The [`initialize(publicToken:delegate:)`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/moonsense/initialize(publictoken:delegate:)) method requires a `publicToken` that can be generated using the [Moonsense Console](https://console.moonsense.cloud/). In order to obtain a token you need to:
 
 - Have a valid Moonsense account.
 - Set up a project for the SDK to use. The default can be used in case you do not want to create one.
 - Configure an application for the SDK to record to.
 - Once the app is set up, use the `Create token` button to obtain the secret and public token to use. The SDK requires the public token as a part of the `initialize(publicToken:delegate:)` invocation. You can hold on to the secret token to read from the Moonsense Cloud later.
 
-The `initialize(publicToken:delegate:)` method also accepts an optional `MoonsenseDelegate` to receive events from the SDK.
+The [`initialize(publicToken:delegate:)`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/moonsense/initialize(publictoken:delegate:)) method also accepts an optional [`MoonsenseDelegate`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/moonsensedelegate) to receive events from the SDK.
 
-Once initialized you can use the `startSession()` and `stopAllSessions()` methods to start and stop recording sessions respectively. If you need finer control over stopping individual sessions, the `startSession()` call returns a `Session` object that includes a `stopSession()` method.
+Once initialized you can use the [`startSession()`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/moonsense/startsession(duration:labels:clientsessiongroupid:)) and [`stopAllSessions()`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/moonsense/stopallsessions()) methods to start and stop recording sessions respectively. If you need finer control over stopping individual sessions, the [`startSession()`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/moonsense/startsession(duration:labels:clientsessiongroupid:)) call returns a [`Session`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/session) object that includes a [`stopSession()`](https://ios.sdk-docs.moonsense.io/documentation/moonsensesdk/session/stopsession()) method.
+
+## Sample Applications
 
 This repo includes two sample apps and a sample SDK accessible from the `MoonsenseSamples.xcworkspace` Xcode Workspace:
 
-- [`SampleApp`](SampleApp) - This sample app demonstrates the use of the Moonsense iOS SDK within a simple application. The example in this case is quite simple and minimal and can serve as a good starting point for developers looking for a quick integration. The `SampleApp` Xcode project contains two targets, `SampleApp` and `SampleApp-Static`. The `SampleApp` target consumes the `MoonsenseSDK.xcframework` dynamically linked variant. The `SampleApp-Static` target consumes the `MoonsenseSDK-static.xcframework` target.
-- [`SamplePaymentApp`](SamplePaymentApp) - This sample app demonstrates the library usage of the Moonsense iOS SDK. Note that the `SamplePaymentApp` does not directly depend on the Moonsense iOS SDK. Instead it includes a dependency to the [`SamplePaymentSDK`](SamplePaymentSDK) which consumes the Moonsense iOS SDK statically linked variant. The app developer here does not have any visibility into the Moonsense iOS SDK as they only interface with the `SamplePaymentSDK`. The example is useful for SDK/library developers looking to integrate the Moonsense iOS SDK.
+- [`SampleApp`](https://github.com/moonsense/moonsense-ios-sdk/tree/main/SampleApp) - This sample app demonstrates the use of the Moonsense iOS SDK within a simple application. The example in this case is quite simple and minimal and can serve as a good starting point for developers looking for a quick integration. The `SampleApp` Xcode project contains two targets, `SampleApp` and `SampleApp-Static`. The `SampleApp` target consumes the `MoonsenseSDK.xcframework` dynamically linked variant. The `SampleApp-Static` target consumes the `MoonsenseSDK-static.xcframework` target.
+- [`SamplePaymentApp`](https://github.com/moonsense/moonsense-ios-sdk/tree/main/SamplePaymentApp) - This sample app demonstrates the library usage of the Moonsense iOS SDK. Note that the `SamplePaymentApp` does not directly depend on the Moonsense iOS SDK. Instead it includes a dependency to the [`SamplePaymentSDK`](https://github.com/moonsense/moonsense-ios-sdk/tree/main/SamplePaymentSDK) which consumes the Moonsense iOS SDK statically linked variant. The app developer here does not have any visibility into the Moonsense iOS SDK as they only interface with the `SamplePaymentSDK`. The example is useful for SDK/library developers looking to integrate the Moonsense iOS SDK.
 
 ## Terms Of Service
 
