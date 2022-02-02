@@ -57,16 +57,16 @@ Cocoapods distribution is not currently available but will be supported in an up
 
 The `MoonsenseSDK.xcframework.zip`, `MoonsenseSDK-static.xcframework.zip` and `MoonsenseSDK.doccarchive.zip` artifacts can also be manually integrated into your project. You can download the latest versions from the following links:
 
-* [`MoonsenseSDK.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0/MoonsenseSDK.xcframework.zip)
-* [`MoonsenseSDK-static.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/0.1.0/MoonsenseSDK-static.xcframework.zip)
-* [`MoonsenseSDK.doccarchive.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.doccarchive/versions/0.1.0/MoonsenseSDK.doccarchive.zip)
+* [`MoonsenseSDK.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0/MoonsenseSDK.xcframework-0.1.0.zip)
+* [`MoonsenseSDK-static.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/0.1.0/MoonsenseSDK-static.xcframework-0.1.0.zip)
+* [`MoonsenseSDK.doccarchive.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.doccarchive/versions/0.1.0/MoonsenseSDK.doccarchive-0.1.0.zip)
 
 Once downloaded, unzip the files and drop the expanded files into your project.
 
 *Note:* The downloads require the authorization token as outlined above. For best results download the artifacts using `curl` with the `-n` option. For example:
 
 ```
-curl -n -o MoonsenseSDK.xcframework.zip https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0/MoonsenseSDK.xcframework.zip
+curl -n -o MoonsenseSDK.xcframework.zip https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0/MoonsenseSDK.xcframework-0.1.0.zip
 ```
 
 ## Usage
