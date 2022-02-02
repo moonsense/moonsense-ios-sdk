@@ -18,7 +18,6 @@
 		24889CA22717449300F70CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24889CA12717449300F70CCF /* Main.storyboard */; };
 		24889CAA2717492300F70CCF /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24889CA82717492300F70CCF /* Poppins-Regular.ttf */; };
 		24889CAB2717492300F70CCF /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24889CA92717492300F70CCF /* Poppins-SemiBold.ttf */; };
-		249A3043275E73660088D37A /* MoonsenseSDK-static in Frameworks */ = {isa = PBXBuildFile; productRef = 249A3042275E73660088D37A /* MoonsenseSDK-static */; };
 		24AADF7F2739B76500474E5C /* CreditCardEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF7E2739B76500474E5C /* CreditCardEntryView.swift */; };
 		24AADF812739B77600474E5C /* CreditCardEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AADF802739B77600474E5C /* CreditCardEntryView.xib */; };
 		24AADF842739B81F00474E5C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF832739B81F00474E5C /* UIViewExtensions.swift */; };
@@ -27,9 +26,11 @@
 		24AADF8D2739C57200474E5C /* CVVEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF8B2739C57200474E5C /* CVVEntryView.swift */; };
 		24AADF8E2739C57200474E5C /* CVVEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AADF8C2739C57200474E5C /* CVVEntryView.xib */; };
 		24AADF9F273DC34200474E5C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AADF9E273DC34200474E5C /* StringExtensions.swift */; };
+		5F88E6CEC5CDBC6B428F6F7A /* MoonsenseSDK-static in Frameworks */ = {isa = PBXBuildFile; productRef = 499F50AD3F75DE4A7868638A /* MoonsenseSDK-static */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24633D0127AAF2E90048A3B9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		247587022718AE03003F2E60 /* SwipeToBuyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToBuyView.swift; sourceTree = "<group>"; };
 		247587042718AE19003F2E60 /* SwipeToBuyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeToBuyView.xib; sourceTree = "<group>"; };
 		247587062718CA45003F2E60 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
@@ -58,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249A3043275E73660088D37A /* MoonsenseSDK-static in Frameworks */,
+				5F88E6CEC5CDBC6B428F6F7A /* MoonsenseSDK-static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +69,7 @@
 		24889C7A27171ECE00F70CCF = {
 			isa = PBXGroup;
 			children = (
+				24633D0127AAF2E90048A3B9 /* README.md */,
 				24889C8627171ECE00F70CCF /* SamplePaymentSDK */,
 				24889C8527171ECE00F70CCF /* Products */,
 			);
@@ -200,7 +202,7 @@
 			);
 			name = SamplePaymentSDK;
 			packageProductDependencies = (
-				249A3042275E73660088D37A /* MoonsenseSDK-static */,
+				499F50AD3F75DE4A7868638A /* MoonsenseSDK-static */,
 			);
 			productName = SamplePaymentSDK;
 			productReference = 24889C8427171ECE00F70CCF /* SamplePaymentSDK.framework */;
@@ -213,7 +215,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Moonsense, Inc.";
 				TargetAttributes = {
 					24889C8327171ECE00F70CCF = {
@@ -231,7 +233,7 @@
 			);
 			mainGroup = 24889C7A27171ECE00F70CCF;
 			packageReferences = (
-				249A3041275E73660088D37A /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */,
+				F09BCDC10943CD79C917F9DA /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */,
 			);
 			productRefGroup = 24889C8527171ECE00F70CCF /* Products */;
 			projectDirPath = "";
@@ -488,20 +490,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		249A3041275E73660088D37A /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */ = {
+		F09BCDC10943CD79C917F9DA /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/moonsense/moonsense-ios-sdk";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		249A3042275E73660088D37A /* MoonsenseSDK-static */ = {
+		499F50AD3F75DE4A7868638A /* MoonsenseSDK-static */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 249A3041275E73660088D37A /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */;
+			package = F09BCDC10943CD79C917F9DA /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */;
 			productName = "MoonsenseSDK-static";
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -39,6 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		24633D0027AAF2DC0048A3B9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		24889C4F2714BE2700F70CCF /* SamplePaymentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamplePaymentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24889C522714BE2700F70CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24889C542714BE2700F70CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		24889C462714BE2700F70CCF = {
 			isa = PBXGroup;
 			children = (
+				24633D0027AAF2DC0048A3B9 /* README.md */,
 				24889C512714BE2700F70CCF /* SamplePaymentApp */,
 				24889C502714BE2700F70CCF /* Products */,
 				24889C952717279F00F70CCF /* Frameworks */,
@@ -176,7 +178,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Moonsense, Inc.";
 				TargetAttributes = {
 					24889C4E2714BE2700F70CCF = {

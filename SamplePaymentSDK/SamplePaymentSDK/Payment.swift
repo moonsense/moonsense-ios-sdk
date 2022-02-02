@@ -69,8 +69,20 @@ public class Payment {
         // Disables all MoonsenseSDK Logging
         Moonsense.logLevel = .none
 
+        // Configure SDK
+        let sdkConfig = SDKConfig.with {
+            // Capture sensors that produce data on intervals at 50Hz.
+            $0.globalSamplingRate = 50
+
+            // Generate bundles every half second.
+            $0.bundleGenerationInterval = 0.5
+
+            // When no SessionConfig is provided when starting a session, capture these sensors:
+            $0.sensorTypes = [.touch, .focusChange, .keyPress, .textChange]
+        }
+
         // Initializes the Moonsense SDK
-        Moonsense.initialize(publicToken: publicToken, delegate: self)
+        Moonsense.initialize(publicToken: publicToken, sdkConfig: sdkConfig, delegate: self)
     }
 
     // MARK: - Resource related helpers

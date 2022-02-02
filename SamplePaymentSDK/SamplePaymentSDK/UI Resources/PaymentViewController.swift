@@ -15,8 +15,13 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
         static let paymentViewHeight = 391.0
         static let animationDuration = 0.5
 
-        static let sessionDuration: TimeInterval = 60 * 60
-        static let paymentSessionLabel = "ios_payment_sdk_sample"
+        // Constants for the subset sensors session
+        static let subsetSensorsSessionDuration: TimeInterval = 60.0 * 60.0
+        static let subsetSensorsSessionLabel = "ios_payment_sdk_sample_subset_sensors"
+
+        // Constants for the all sensors session
+        static let allSensorsSessionDuration: TimeInterval = 30.0
+        static let allSensorsSessionLabel = "ios_payment_sdk_sample_all_sensors"
     }
 
     private enum State {
@@ -47,7 +52,8 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
     var purchaseCompletion: ((Bool) -> Void)?
 
     private var swiped = false
-    private var session: Session?
+    private var subsetSensorsSession: Session?
+    private var allSensorsSession: Session?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,8 +87,15 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
         // Watch for text changes
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: UITextField.textDidChangeNotification, object: nil)
 
-        // Once the view is configured and prepared to present, start the Moonsense SDK Session
-        session = try? Moonsense.startSession(duration: Constants.sessionDuration, labels: [Constants.paymentSessionLabel])
+        // Once the view is configured and prepared to present...
+
+        // Start a long duration Moonsense SDK Session with the subset of available sensors established by the SDKConfig...
+        subsetSensorsSession = try? Moonsense.startSession(duration: Constants.subsetSensorsSessionDuration, labels: [Constants.subsetSensorsSessionLabel])
+
+        // ...and then start a second, shorter duration Moonsense SDK Session to capture all available sensors.
+        allSensorsSession = try? Moonsense.startSession(duration: Constants.allSensorsSessionDuration,
+                                                        sessionConfig: SessionConfig.with { $0.sensorTypes = SensorType.allCases },
+                                                        labels: [Constants.allSensorsSessionLabel])
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -181,8 +194,9 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
                 self.paymentViewHeightConstraint.constant = Constants.paymentViewHeight
                 self.paymentView.layer.cornerRadius = 20
             case .closed:
-                // Stop the Moonsense session once the payment view is closed
-                self.session?.stopSession()
+                // Stop the Moonsense sessions once the payment view is closed
+                self.subsetSensorsSession?.stopSession()
+                self.allSensorsSession?.stopSession()
 
                 self.blurredView.alpha = 0
                 self.paymentViewHeightConstraint.constant = 0

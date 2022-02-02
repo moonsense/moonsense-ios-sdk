@@ -18,13 +18,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MoonsenseSDK",
-            url: "https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.1.0/MoonsenseSDK.xcframework.zip",
-            checksum: "27386a63030c66ad286c7b22216c459682b67a74f5b8f4662424daa927d807b3"
+            url: "https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.2.0/MoonsenseSDK.xcframework-0.2.0.zip",
+            checksum: "7ccdab724c37ffdd1bd5394fd1eafbf8e93a330561dda43b647d7d007c1c6fdd"
         ),
         .binaryTarget(
             name: "MoonsenseSDK-static",
-            url: "https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/0.1.0/MoonsenseSDK-static.xcframework.zip",
-            checksum: "dc52aba710784bcb53eb2134e9b6ff2ee7ba494be2b5ee3ca6dc046606fd820d"
+            url: "https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/0.2.0/MoonsenseSDK-static.xcframework-0.2.0.zip",
+            checksum: "c2b57938330f7e31e453b5b6c3fc29b94b1be316c6961d8e55e6bab95c2fedf6"
         )
     ]
 )
