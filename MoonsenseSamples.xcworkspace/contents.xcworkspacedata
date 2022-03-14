@@ -10,4 +10,7 @@
    <FileRef
       location = "group:SamplePaymentSDK/SamplePaymentSDK.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:SampleCoreApp/SampleCoreApp.xcodeproj">
+   </FileRef>
 </Workspace>
