@@ -7,20 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05ECD2D1802BFD4601A95022 /* MoonsenseSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4A9658D2E8CB5BF855AC1995 /* MoonsenseSDK */; };
+		241EF60527DA99C100CE8DFF /* AcmeSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EF60427DA99C100CE8DFF /* AcmeSDK.swift */; };
+		241EF60627DA99C100CE8DFF /* AcmeSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EF60427DA99C100CE8DFF /* AcmeSDK.swift */; };
+		241EF60827DA9B1900CE8DFF /* AcmeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EF60727DA9B1900CE8DFF /* AcmeSession.swift */; };
+		241EF60927DA9B1900CE8DFF /* AcmeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EF60727DA9B1900CE8DFF /* AcmeSession.swift */; };
+		241EF60C27DB9F1700CE8DFF /* GCDWebServers in Frameworks */ = {isa = PBXBuildFile; productRef = 241EF60B27DB9F1700CE8DFF /* GCDWebServers */; };
+		241EF60F27DBA05F00CE8DFF /* AcmeServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EF60E27DBA05F00CE8DFF /* AcmeServer.swift */; };
+		241EF61027DBA05F00CE8DFF /* AcmeServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EF60E27DBA05F00CE8DFF /* AcmeServer.swift */; };
+		241EF61727DBA35B00CE8DFF /* GCDWebServers in Frameworks */ = {isa = PBXBuildFile; productRef = 241EF61627DBA35B00CE8DFF /* GCDWebServers */; };
+		241EF61C27DBA4C500CE8DFF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241EF61B27DBA4C500CE8DFF /* CoreServices.framework */; };
+		241EF61D27DBA4CF00CE8DFF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241EF61B27DBA4C500CE8DFF /* CoreServices.framework */; };
+		241EF61F27DBC2A700CE8DFF /* AcmeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EF61E27DBC2A700CE8DFF /* AcmeRequest.swift */; };
+		241EF62027DBC2A700CE8DFF /* AcmeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EF61E27DBC2A700CE8DFF /* AcmeRequest.swift */; };
+		241EF62F27DBD58C00CE8DFF /* AcmeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EF62E27DBD58C00CE8DFF /* AcmeResponse.swift */; };
+		241EF63027DBD58C00CE8DFF /* AcmeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EF62E27DBD58C00CE8DFF /* AcmeResponse.swift */; };
 		245DB36F26FA545B003A5B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0513126CED02800D243E0 /* ViewController.swift */; };
 		245DB37026FA545B003A5B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0512D26CED02800D243E0 /* AppDelegate.swift */; };
 		245DB37126FA545B003A5B73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0512F26CED02800D243E0 /* SceneDelegate.swift */; };
 		245DB37526FA545B003A5B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E0513826CED02A00D243E0 /* LaunchScreen.storyboard */; };
 		245DB37626FA545B003A5B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E0513626CED02A00D243E0 /* Assets.xcassets */; };
 		245DB37726FA545B003A5B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E0513326CED02800D243E0 /* Main.storyboard */; };
+		245DB38026FA547A003A5B73 /* libMoonsenseCoreSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 245DB37F26FA547A003A5B73 /* libMoonsenseCoreSDK.a */; };
+		24D9CA9626CEE8E50000B1E4 /* MoonsenseCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D9CA9526CEE8E50000B1E4 /* MoonsenseCoreSDK.framework */; };
+		24D9CA9726CEE8E50000B1E4 /* MoonsenseCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24D9CA9526CEE8E50000B1E4 /* MoonsenseCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24E0512E26CED02800D243E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0512D26CED02800D243E0 /* AppDelegate.swift */; };
 		24E0513026CED02800D243E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0512F26CED02800D243E0 /* SceneDelegate.swift */; };
 		24E0513226CED02800D243E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0513126CED02800D243E0 /* ViewController.swift */; };
 		24E0513526CED02800D243E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E0513326CED02800D243E0 /* Main.storyboard */; };
 		24E0513726CED02A00D243E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E0513626CED02A00D243E0 /* Assets.xcassets */; };
 		24E0513A26CED02A00D243E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E0513826CED02A00D243E0 /* LaunchScreen.storyboard */; };
-		4DBAA3B1DFE963AB06775105 /* MoonsenseSDK-static in Frameworks */ = {isa = PBXBuildFile; productRef = F723C25A076C2C315765A433 /* MoonsenseSDK-static */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				24D9CA9726CEE8E50000B1E4 /* MoonsenseCoreSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,9 +53,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		245DB37D26FA545B003A5B73 /* SampleApp-Static.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SampleApp-Static.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		241EF60427DA99C100CE8DFF /* AcmeSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcmeSDK.swift; sourceTree = "<group>"; };
+		241EF60727DA9B1900CE8DFF /* AcmeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcmeSession.swift; sourceTree = "<group>"; };
+		241EF60E27DBA05F00CE8DFF /* AcmeServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcmeServer.swift; sourceTree = "<group>"; };
+		241EF61127DBA0FD00CE8DFF /* WebServer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebServer-Bridging-Header.h"; sourceTree = "<group>"; };
+		241EF61B27DBA4C500CE8DFF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		241EF61E27DBC2A700CE8DFF /* AcmeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcmeRequest.swift; sourceTree = "<group>"; };
+		241EF62E27DBD58C00CE8DFF /* AcmeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcmeResponse.swift; sourceTree = "<group>"; };
+		245DB37D26FA545B003A5B73 /* SampleCoreApp-Static.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SampleCoreApp-Static.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		245DB37F26FA547A003A5B73 /* libMoonsenseCoreSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMoonsenseCoreSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		24633CFF27AAF2CF0048A3B9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		24E0512A26CED02800D243E0 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D9CA9526CEE8E50000B1E4 /* MoonsenseCoreSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MoonsenseCoreSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E0512A26CED02800D243E0 /* SampleCoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E0512D26CED02800D243E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E0512F26CED02800D243E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		24E0513126CED02800D243E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DBAA3B1DFE963AB06775105 /* MoonsenseSDK-static in Frameworks */,
+				241EF61D27DBA4CF00CE8DFF /* CoreServices.framework in Frameworks */,
+				245DB38026FA547A003A5B73 /* libMoonsenseCoreSDK.a in Frameworks */,
+				241EF61727DBA35B00CE8DFF /* GCDWebServers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,34 +89,85 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05ECD2D1802BFD4601A95022 /* MoonsenseSDK in Frameworks */,
+				241EF61C27DBA4C500CE8DFF /* CoreServices.framework in Frameworks */,
+				24D9CA9626CEE8E50000B1E4 /* MoonsenseCoreSDK.framework in Frameworks */,
+				241EF60C27DB9F1700CE8DFF /* GCDWebServers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		241EF60327DA997900CE8DFF /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				241EF60427DA99C100CE8DFF /* AcmeSDK.swift */,
+				241EF60727DA9B1900CE8DFF /* AcmeSession.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		241EF60D27DB9F2300CE8DFF /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				241EF60E27DBA05F00CE8DFF /* AcmeServer.swift */,
+				241EF61127DBA0FD00CE8DFF /* WebServer-Bridging-Header.h */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		241EF62127DBCFCB00CE8DFF /* Acme */ = {
+			isa = PBXGroup;
+			children = (
+				241EF60327DA997900CE8DFF /* Client */,
+				241EF60D27DB9F2300CE8DFF /* Server */,
+				241EF62227DBCFD000CE8DFF /* Shared */,
+			);
+			path = Acme;
+			sourceTree = "<group>";
+		};
+		241EF62227DBCFD000CE8DFF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				241EF61E27DBC2A700CE8DFF /* AcmeRequest.swift */,
+				241EF62E27DBD58C00CE8DFF /* AcmeResponse.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		24D9CA9426CEE8E50000B1E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				241EF61B27DBA4C500CE8DFF /* CoreServices.framework */,
+				245DB37F26FA547A003A5B73 /* libMoonsenseCoreSDK.a */,
+				24D9CA9526CEE8E50000B1E4 /* MoonsenseCoreSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		24E0512126CED02800D243E0 = {
 			isa = PBXGroup;
 			children = (
 				24633CFF27AAF2CF0048A3B9 /* README.md */,
-				24E0512C26CED02800D243E0 /* SampleApp */,
+				24E0512C26CED02800D243E0 /* SampleCoreApp */,
 				24E0512B26CED02800D243E0 /* Products */,
+				24D9CA9426CEE8E50000B1E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		24E0512B26CED02800D243E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24E0512A26CED02800D243E0 /* SampleApp.app */,
-				245DB37D26FA545B003A5B73 /* SampleApp-Static.app */,
+				24E0512A26CED02800D243E0 /* SampleCoreApp.app */,
+				245DB37D26FA545B003A5B73 /* SampleCoreApp-Static.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		24E0512C26CED02800D243E0 /* SampleApp */ = {
+		24E0512C26CED02800D243E0 /* SampleCoreApp */ = {
 			isa = PBXGroup;
 			children = (
+				241EF62127DBCFCB00CE8DFF /* Acme */,
 				24E0512D26CED02800D243E0 /* AppDelegate.swift */,
 				24E0512F26CED02800D243E0 /* SceneDelegate.swift */,
 				24E0513126CED02800D243E0 /* ViewController.swift */,
@@ -98,15 +176,15 @@
 				24E0513826CED02A00D243E0 /* LaunchScreen.storyboard */,
 				24E0513B26CED02A00D243E0 /* Info.plist */,
 			);
-			path = SampleApp;
+			path = SampleCoreApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		245DB36D26FA545B003A5B73 /* SampleApp-Static */ = {
+		245DB36D26FA545B003A5B73 /* SampleCoreApp-Static */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 245DB37A26FA545B003A5B73 /* Build configuration list for PBXNativeTarget "SampleApp-Static" */;
+			buildConfigurationList = 245DB37A26FA545B003A5B73 /* Build configuration list for PBXNativeTarget "SampleCoreApp-Static" */;
 			buildPhases = (
 				245DB36E26FA545B003A5B73 /* Sources */,
 				245DB37226FA545B003A5B73 /* Frameworks */,
@@ -116,17 +194,17 @@
 			);
 			dependencies = (
 			);
-			name = "SampleApp-Static";
+			name = "SampleCoreApp-Static";
 			packageProductDependencies = (
-				F723C25A076C2C315765A433 /* MoonsenseSDK-static */,
+				241EF61627DBA35B00CE8DFF /* GCDWebServers */,
 			);
-			productName = SampleApp;
-			productReference = 245DB37D26FA545B003A5B73 /* SampleApp-Static.app */;
+			productName = SampleCoreApp;
+			productReference = 245DB37D26FA545B003A5B73 /* SampleCoreApp-Static.app */;
 			productType = "com.apple.product-type.application";
 		};
-		24E0512926CED02800D243E0 /* SampleApp */ = {
+		24E0512926CED02800D243E0 /* SampleCoreApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24E0513E26CED02A00D243E0 /* Build configuration list for PBXNativeTarget "SampleApp" */;
+			buildConfigurationList = 24E0513E26CED02A00D243E0 /* Build configuration list for PBXNativeTarget "SampleCoreApp" */;
 			buildPhases = (
 				24E0512626CED02800D243E0 /* Sources */,
 				24E0512726CED02800D243E0 /* Frameworks */,
@@ -137,12 +215,12 @@
 			);
 			dependencies = (
 			);
-			name = SampleApp;
+			name = SampleCoreApp;
 			packageProductDependencies = (
-				4A9658D2E8CB5BF855AC1995 /* MoonsenseSDK */,
+				241EF60B27DB9F1700CE8DFF /* GCDWebServers */,
 			);
-			productName = SampleApp;
-			productReference = 24E0512A26CED02800D243E0 /* SampleApp.app */;
+			productName = SampleCoreApp;
+			productReference = 24E0512A26CED02800D243E0 /* SampleCoreApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -161,7 +239,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 24E0512526CED02800D243E0 /* Build configuration list for PBXProject "SampleApp" */;
+			buildConfigurationList = 24E0512526CED02800D243E0 /* Build configuration list for PBXProject "SampleCoreApp" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -171,14 +249,14 @@
 			);
 			mainGroup = 24E0512126CED02800D243E0;
 			packageReferences = (
-				54B054FD040D5736B4C15D92 /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */,
+				241EF60A27DB9F1700CE8DFF /* XCRemoteSwiftPackageReference "GCDWebServer" */,
 			);
 			productRefGroup = 24E0512B26CED02800D243E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24E0512926CED02800D243E0 /* SampleApp */,
-				245DB36D26FA545B003A5B73 /* SampleApp-Static */,
+				24E0512926CED02800D243E0 /* SampleCoreApp */,
+				245DB36D26FA545B003A5B73 /* SampleCoreApp-Static */,
 			);
 		};
 /* End PBXProject section */
@@ -211,6 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241EF60627DA99C100CE8DFF /* AcmeSDK.swift in Sources */,
+				241EF60927DA9B1900CE8DFF /* AcmeSession.swift in Sources */,
+				241EF63027DBD58C00CE8DFF /* AcmeResponse.swift in Sources */,
+				241EF62027DBC2A700CE8DFF /* AcmeRequest.swift in Sources */,
+				241EF61027DBA05F00CE8DFF /* AcmeServer.swift in Sources */,
 				245DB36F26FA545B003A5B73 /* ViewController.swift in Sources */,
 				245DB37026FA545B003A5B73 /* AppDelegate.swift in Sources */,
 				245DB37126FA545B003A5B73 /* SceneDelegate.swift in Sources */,
@@ -221,6 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241EF60527DA99C100CE8DFF /* AcmeSDK.swift in Sources */,
+				241EF60827DA9B1900CE8DFF /* AcmeSession.swift in Sources */,
+				241EF62F27DBD58C00CE8DFF /* AcmeResponse.swift in Sources */,
+				241EF61F27DBC2A700CE8DFF /* AcmeRequest.swift in Sources */,
+				241EF60F27DBA05F00CE8DFF /* AcmeServer.swift in Sources */,
 				24E0513226CED02800D243E0 /* ViewController.swift in Sources */,
 				24E0512E26CED02800D243E0 /* AppDelegate.swift in Sources */,
 				24E0513026CED02800D243E0 /* SceneDelegate.swift in Sources */,
@@ -258,7 +346,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = APX2AGX45B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_FILE = SampleCoreApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -269,7 +357,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.moonsense.MoonsenseSDK.SampleApp-Static";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.moonsense.MoonsenseSDK.SampleCoreApp-Static";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -286,7 +374,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = APX2AGX45B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_FILE = SampleCoreApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -297,7 +385,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.moonsense.MoonsenseSDK.SampleApp-Static";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.moonsense.MoonsenseSDK.SampleCoreApp-Static";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -362,6 +450,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleCoreApp/Acme/Server/WebServer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -416,6 +505,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleCoreApp/Acme/Server/WebServer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -430,7 +520,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = APX2AGX45B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_FILE = SampleCoreApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -441,7 +531,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.moonsense.MoonsenseSDK.SampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.moonsense.MoonsenseSDK.SampleCoreApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -458,7 +548,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = APX2AGX45B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_FILE = SampleCoreApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -469,7 +559,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.moonsense.MoonsenseSDK.SampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.moonsense.MoonsenseSDK.SampleCoreApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -480,7 +570,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		245DB37A26FA545B003A5B73 /* Build configuration list for PBXNativeTarget "SampleApp-Static" */ = {
+		245DB37A26FA545B003A5B73 /* Build configuration list for PBXNativeTarget "SampleCoreApp-Static" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				245DB37B26FA545B003A5B73 /* Debug */,
@@ -489,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24E0512526CED02800D243E0 /* Build configuration list for PBXProject "SampleApp" */ = {
+		24E0512526CED02800D243E0 /* Build configuration list for PBXProject "SampleCoreApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24E0513C26CED02A00D243E0 /* Debug */,
@@ -498,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24E0513E26CED02A00D243E0 /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
+		24E0513E26CED02A00D243E0 /* Build configuration list for PBXNativeTarget "SampleCoreApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24E0513F26CED02A00D243E0 /* Debug */,
@@ -510,26 +600,26 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		54B054FD040D5736B4C15D92 /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */ = {
+		241EF60A27DB9F1700CE8DFF /* XCRemoteSwiftPackageReference "GCDWebServer" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/moonsense/moonsense-ios-sdk";
+			repositoryURL = "https://github.com/JacobHearst/GCDWebServer";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 0.3.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4A9658D2E8CB5BF855AC1995 /* MoonsenseSDK */ = {
+		241EF60B27DB9F1700CE8DFF /* GCDWebServers */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 54B054FD040D5736B4C15D92 /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */;
-			productName = MoonsenseSDK;
+			package = 241EF60A27DB9F1700CE8DFF /* XCRemoteSwiftPackageReference "GCDWebServer" */;
+			productName = GCDWebServers;
 		};
-		F723C25A076C2C315765A433 /* MoonsenseSDK-static */ = {
+		241EF61627DBA35B00CE8DFF /* GCDWebServers */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 54B054FD040D5736B4C15D92 /* XCRemoteSwiftPackageReference "moonsense-ios-sdk" */;
-			productName = "MoonsenseSDK-static";
+			package = 241EF60A27DB9F1700CE8DFF /* XCRemoteSwiftPackageReference "GCDWebServer" */;
+			productName = GCDWebServers;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
