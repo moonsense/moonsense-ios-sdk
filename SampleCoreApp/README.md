@@ -12,16 +12,16 @@ The `SampleCoreApp` project demonstrates the use of the Moonsense iOS Core SDK w
 
 At this time, the `MoonsenseCoreSDK.xcframework.zip`, `MoonsenseCoreSDK-static.xcframework.zip` and `MoonsenseCoreSDK.doccarchive.zip` artifacts must be manually integrated into your project. You can download the latest versions from the following links:
 
-* [`MoonsenseCoreSDK.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK.xcframework/versions/0.3.0/MoonsenseSDK.xcframework-0.3.0.zip)
-* [`MoonsenseCoreSDK-static.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK-static.xcframework/versions/0.3.0/MoonsenseCoreSDK-static.xcframework-0.3.0.zip)
-* [`MoonsenseCoreSDK.doccarchive.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK.doccarchive/versions/0.3.0/MoonsenseCoreSDK.doccarchive-0.3.0.zip)
+* [`MoonsenseCoreSDK.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK.xcframework/versions/0.3.1/MoonsenseSDK.xcframework-0.3.1.zip)
+* [`MoonsenseCoreSDK-static.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK-static.xcframework/versions/0.3.1/MoonsenseCoreSDK-static.xcframework-0.3.1.zip)
+* [`MoonsenseCoreSDK.doccarchive.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK.doccarchive/versions/0.3.1/MoonsenseCoreSDK.doccarchive-0.3.1.zip)
 
 Once downloaded, unzip the files and drop the expanded files into your project.
 
 *Note:* The downloads require the authorization token as outlined in the main [`README.md`](../README.md/#configuring-netrc-for-authorizing-downloads). For best results download the artifacts using `curl` with the `-n` option. For example:
 
 ```
-curl -n -o MoonsenseSDK.xcframework.zip https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.3.0/MoonsenseSDK.xcframework-0.3.0.zip
+curl -n -o MoonsenseSDK.xcframework.zip https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/0.3.1/MoonsenseSDK.xcframework-0.3.1.zip
 ```
 
 ## Terms Of Service
