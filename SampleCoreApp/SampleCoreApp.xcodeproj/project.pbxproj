@@ -231,7 +231,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "Moonsense, Inc.";
 				TargetAttributes = {
 					24E0512926CED02800D243E0 = {

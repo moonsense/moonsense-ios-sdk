@@ -67,20 +67,16 @@ public class Payment {
         overlayWindow = SDKOverlayWindow(frame: UIScreen.main.bounds)
 
         // Disables all MoonsenseSDK Logging
-        Moonsense.logLevel = .none
+        Moonsense.logLevel = .debug
 
-        // Configure SDK
-        let sdkConfig = SDKConfig.with {
-            // Capture sensors that produce data on intervals at 50Hz.
-            $0.globalSamplingRate = 50
-
-            // Generate bundles every half second.
-            $0.bundleGenerationInterval = 0.5
-
-            // When no SessionConfig is provided when starting a session, capture these sensors:
-            $0.sensorTypes = [.touch, .focusChange, .keyPress, .textChange]
-        }
-
+        // Configure SDK:
+        // Capture sensors that produce data on intervals at 50Hz.
+        // Generate bundles every half second.
+        // When no SessionConfig is provided when starting a session, capture these sensors:
+        let sdkConfig = SDKConfig(sensorTypes: [.touch, .focusChange, .keyPress, .textChange],
+                                  globalSamplingRate: 50,
+                                  bundleGenerationInterval: 0.5)
+        
         // Initializes the Moonsense SDK
         Moonsense.initialize(publicToken: publicToken, sdkConfig: sdkConfig, delegate: self)
     }

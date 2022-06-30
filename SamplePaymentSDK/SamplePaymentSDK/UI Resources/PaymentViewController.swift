@@ -94,7 +94,7 @@ class PaymentViewController: UIViewController, SDKOverlayWindowPresentable {
 
         // ...and then start a second, shorter duration Moonsense SDK Session to capture all available sensors.
         allSensorsSession = try? Moonsense.startSession(duration: Constants.allSensorsSessionDuration,
-                                                        sessionConfig: SessionConfig.with { $0.sensorTypes = SensorType.allCases },
+                                                        sessionConfig: SessionConfig(sensorTypes: SensorType.allCases),
                                                         labels: [Constants.allSensorsSessionLabel])
     }
 
