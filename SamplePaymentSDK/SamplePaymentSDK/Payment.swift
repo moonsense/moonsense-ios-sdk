@@ -67,7 +67,7 @@ public class Payment {
         overlayWindow = SDKOverlayWindow(frame: UIScreen.main.bounds)
 
         // Disables all MoonsenseSDK Logging
-        Moonsense.logLevel = .none
+        Moonsense.logLevel = .debug
 
         // Configure SDK:
         // Capture sensors that produce data on intervals at 50Hz.
