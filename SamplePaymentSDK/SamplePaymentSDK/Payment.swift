@@ -73,7 +73,7 @@ public class Payment {
         // Capture sensors that produce data on intervals at 50Hz.
         // Generate bundles every half second.
         // When no SessionConfig is provided when starting a session, capture these sensors:
-        let sdkConfig = SDKConfig(sensorTypes: [.touch, .focusChange, .keyPress, .textChange],
+        let sdkConfig = SDKConfig(sensorTypes: [.touch, .focusChange, .inputChange, .keyPress],
                                   globalSamplingRate: 50,
                                   bundleGenerationInterval: 0.5)
         

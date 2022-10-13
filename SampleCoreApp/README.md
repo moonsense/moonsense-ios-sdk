@@ -12,16 +12,16 @@ The `SampleCoreApp` project demonstrates the use of the Moonsense iOS Core SDK w
 
 At this time, the `MoonsenseCoreSDK.xcframework.zip`, `MoonsenseCoreSDK-static.xcframework.zip` and `MoonsenseCoreSDK.doccarchive.zip` artifacts must be manually integrated into your project. You can download the latest versions from the following links:
 
-* [`MoonsenseCoreSDK.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK.xcframework/versions/1.1.1/MoonsenseCoreSDK.xcframework-1.1.1.zip)
-* [`MoonsenseCoreSDK-static.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK-static.xcframework/versions/1.1.1/MoonsenseCoreSDK-static.xcframework-1.1.1.zip)
-* [`MoonsenseCoreSDK.doccarchive.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK.doccarchive/versions/1.1.1/MoonsenseCoreSDK.doccarchive-1.1.1.zip)
+* [`MoonsenseCoreSDK.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK.xcframework/versions/1.2.0/MoonsenseCoreSDK.xcframework-1.2.0.zip)
+* [`MoonsenseCoreSDK-static.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK-static.xcframework/versions/1.2.0/MoonsenseCoreSDK-static.xcframework-1.2.0.zip)
+* [`MoonsenseCoreSDK.doccarchive.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK.doccarchive/versions/1.2.0/MoonsenseCoreSDK.doccarchive-1.2.0.zip)
 
 Once downloaded, unzip the files and drop the expanded files into your project.
 
 *Note:* The downloads require the authorization token as outlined in the main [`README.md`](../README.md/#configuring-netrc-for-authorizing-downloads). For best results download the artifacts using `curl` with the `-n` option. For example:
 
 ```
-curl -n -o MoonsenseCoreSDK.xcframework.zip https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK.xcframework/versions/1.1.1/MoonsenseCoreSDK.xcframework-1.1.1.zip
+curl -n -o MoonsenseCoreSDK.xcframework.zip https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK.xcframework/versions/1.2.0/MoonsenseCoreSDK.xcframework-1.2.0.zip
 ```
 
 ## Terms Of Service
