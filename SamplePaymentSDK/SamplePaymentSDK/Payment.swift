@@ -82,7 +82,7 @@ public class Payment {
     }
 
     // MARK: - Resource related helpers
-    internal class func frameworkBundle() -> Bundle {
+    internal class func frameworkBundle() -> Foundation.Bundle {
         return Bundle(for: Payment.self)
     }
 
