@@ -23,7 +23,7 @@ The `MoonsenseSDK-static.xcframework` contains the statically linked variant of 
 
 ## Version History
 
-The latest release of the SDK is `1.2.0`. Details about the current and past releases can be found [here](https://github.com/moonsense/moonsense-ios-sdk/releases/).
+The latest release of the SDK is `1.2.1`. Details about the current and past releases can be found [here](https://github.com/moonsense/moonsense-ios-sdk/releases/).
 
 ## Prerequisites
 
@@ -57,16 +57,16 @@ Cocoapods distribution is not currently available but will be supported in an up
 
 The `MoonsenseSDK.xcframework.zip`, `MoonsenseSDK-static.xcframework.zip` and `MoonsenseSDK.doccarchive.zip` artifacts can also be manually integrated into your project. You can download the latest versions from the following links:
 
-* [`MoonsenseSDK.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/1.2.0/MoonsenseSDK.xcframework-1.2.0.zip)
-* [`MoonsenseSDK-static.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/1.2.0/MoonsenseSDK-static.xcframework-1.2.0.zip)
-* [`MoonsenseSDK.doccarchive.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.doccarchive/versions/1.2.0/MoonsenseSDK.doccarchive-1.2.0.zip)
+* [`MoonsenseSDK.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/1.2.1/MoonsenseSDK.xcframework-1.2.1.zip)
+* [`MoonsenseSDK-static.xcframework.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/1.2.1/MoonsenseSDK-static.xcframework-1.2.1.zip)
+* [`MoonsenseSDK.doccarchive.zip`](https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.doccarchive/versions/1.2.1/MoonsenseSDK.doccarchive-1.2.1.zip)
 
 Once downloaded, unzip the files and drop the expanded files into your project.
 
 *Note:* The downloads require the authorization token as outlined above. For best results download the artifacts using `curl` with the `-n` option. For example:
 
 ```
-curl -n -o MoonsenseSDK.xcframework.zip https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/1.2.0/MoonsenseSDK.xcframework-1.2.0.zip
+curl -n -o MoonsenseSDK.xcframework.zip https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/1.2.1/MoonsenseSDK.xcframework-1.2.1.zip
 ```
 
 ## Usage
