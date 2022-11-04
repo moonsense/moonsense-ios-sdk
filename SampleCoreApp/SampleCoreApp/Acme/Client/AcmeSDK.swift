@@ -31,11 +31,11 @@ class AcmeSDK {
     init() {
         // Configure SDK:
         // Generate a bundle every second
-        // Only record acceleremoter data
-        let sdkCoreConfig = SDKCoreConfig(sensorTypes: [.accelerometer],
-                                          bundleGenerationInterval: 1.0)
+        // Only record accelerometer data
+        let sdkConfig = SDKConfig(sensorTypes: [.accelerometer],
+                                  bundleGenerationInterval: 1.0)
 
-        Moonsense.initialize(sdkCoreConfig: sdkCoreConfig, delegate: self)
+        Moonsense.initialize(sdkConfig: sdkConfig, delegate: self)
     }
 
     /// Record an `AcmeSession`.

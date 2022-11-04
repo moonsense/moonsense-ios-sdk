@@ -9,7 +9,7 @@ import UIKit
 
 // The `SDKOverlayWindow` will be used to display all UIComponents from the SamplePaymentSDK.
 // This approach ensures that the views owned by the SamplePaymentSDK do not interfere
-// with any view hierachies from the app consuming the SamplePaymentSDK framework.
+// with any view hierarchies from the app consuming the SamplePaymentSDK framework.
 class SDKOverlayWindow: UIWindow {
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,7 +27,7 @@ class SDKOverlayWindow: UIWindow {
         windowLevel = .statusBar - 1
     }
 
-    // Presents the provided view controller via the the `SDKOverlayWindow.`
+    // Presents the provided view controller via the `SDKOverlayWindow.`
     func present(viewController: SDKOverlayWindowPresentable) {
         viewController.overlayWindow = self
         rootViewController = viewController

@@ -11,7 +11,7 @@ import SamplePaymentSDK
 class ViewController: UIViewController {
     enum Constants {
         static let chocoChipPrice = 4.99
-        static let oatmeanRaidinPrice = 5.99
+        static let oatmealRaisinPrice = 5.99
         static let taxRate = 0.0825
     }
 
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         chocoChipCookie = Cookie(name: "Choco Chip", price: Constants.chocoChipPrice, initialQuantity: 1)
         chocoChipView.cookie = chocoChipCookie
 
-        oatmealRaisinCookie = Cookie(name: "Oatmeal Raisin", price: Constants.oatmeanRaidinPrice, initialQuantity: 1)
+        oatmealRaisinCookie = Cookie(name: "Oatmeal Raisin", price: Constants.oatmealRaisinPrice, initialQuantity: 1)
         oatmealRaisinView.cookie = oatmealRaisinCookie
 
         NotificationCenter.default.addObserver(forName: CookieItemView.cookieChangedNotification, object: nil, queue: .main) { [self] notification in
