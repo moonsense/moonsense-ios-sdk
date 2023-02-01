@@ -14,7 +14,7 @@ import MoonsenseCoreSDK
 ///
 /// In this case we associate a Moonsense Session with corresponding Acme Session.
 ///
-/// This example also demonstrates the handling of the Bundle data received via the `MoonsenseCoreDelegate`.
+/// This example also demonstrates the handling of the Bundle data received via the `MoonsenseDelegate`.
 class AcmeSDK {
     private enum Constants {
         static let acmeServerHost = "localhost"
@@ -88,8 +88,8 @@ class AcmeSDK {
     }()
 }
 
-extension AcmeSDK: MoonsenseCoreDelegate {
-    func sessionDidCreateBundle(_ session: Session, bundle: MoonsenseCoreSDK.Bundle) {
+extension AcmeSDK: MoonsenseDelegate {
+    func sessionDidCreateBundle(_ session: Session, bundle: MoonsenseBundle) {
         guard let acmeSession = sessionMap[session.localID] else {
             return
         }

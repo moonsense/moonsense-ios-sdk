@@ -93,7 +93,7 @@ class ViewController: UIViewController {
         toastLabel.textAlignment = .center;
         toastLabel.text = message
         toastLabel.alpha = 1.0
-        toastLabel.clipsToBounds  =  true
+        toastLabel.clipsToBounds = true
 
         self.view.addSubview(toastLabel)
 

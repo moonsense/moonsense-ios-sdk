@@ -4,7 +4,7 @@ The `SampleApp` project demonstrates the use of the Moonsense iOS SDK within a s
 
 ## Prerequisites
 
-- Xcode 13.0+
+- Xcode 14.0+
 - Swift projects must use Swift 5.0 or greater
 - Deployment target of iOS 11.0 or greater
 

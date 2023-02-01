@@ -6,7 +6,7 @@ The `SamplePaymentSDK` provides an example Swipe to Buy experience which is reco
 
 ## Prerequisites
 
-- Xcode 13.0+
+- Xcode 14.0+
 - Swift projects must use Swift 5.0 or greater
 - Deployment target of iOS 11.0 or greater
 

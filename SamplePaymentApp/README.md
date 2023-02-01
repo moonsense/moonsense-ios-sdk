@@ -4,7 +4,7 @@ The `SamplePaymentApp` demonstrates how a Third Party `.xcframework` which inclu
 
 ## Prerequisites
 
-- Xcode 13.0+
+- Xcode 14.0+
 - Swift projects must use Swift 5.0 or greater
 - Deployment target of iOS 11.0 or greater
 
