@@ -19,13 +19,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MoonsenseSDK",
-            url: "https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/1.6.0/MoonsenseSDK.xcframework-1.6.0.zip",
-            checksum: "510afdead54fc1d51be74f6cb352f98ccbd2efb8ed929af78800506faaecf2ec"
+            url: "https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK.xcframework/versions/1.5.0/MoonsenseSDK.xcframework-1.5.0.zip",
+            checksum: "108fe821c1ef3820b8432f0a2da740aa261824f9ff9237cc0d23089f44d20b2a"
         ),
         .binaryTarget(
             name: "MoonsenseSDK-static",
-            url: "https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/1.6.0/MoonsenseSDK-static.xcframework-1.6.0.zip",
-            checksum: "ff6cfaaba553a08fc6b29058970aa9007ac1a4737f302f5a6b5badfbd318755c"
+            url: "https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseSDK-static.xcframework/versions/1.5.0/MoonsenseSDK-static.xcframework-1.5.0.zip",
+            checksum: "bb5f55e02174c853a36c302dfc5b1ffeacc719eeb57fbd8d4ddd9e89a2adacd5"
         )
     ]
 )
@@ -33,11 +33,11 @@ let package = Package(
 if ProcessInfo.processInfo.environment["MOONSENSE_INCLUDE_CORE_PACKAGES"] != nil {
     package.products.append(Product.library(name: "MoonsenseCoreSDK", targets: ["MoonsenseCoreSDK"]))
     package.targets.append(Target.binaryTarget(name: "MoonsenseCoreSDK",
-                                               url: "https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK.xcframework/versions/1.6.0/MoonsenseCoreSDK.xcframework-1.6.0.zip",
-                                               checksum: "7c3898effdf8caa9f506d52c9b0323f4c9de0baa47f3cd9de71edf706f788c4b"))
+                                               url: "https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK.xcframework/versions/1.5.0/MoonsenseCoreSDK.xcframework-1.5.0.zip",
+                                               checksum: "37a753b9a8488ab08d1bcfb80a6d06555a357be539012a631dd7fc27ad832f09"))
 
     package.products.append(Product.library(name: "MoonsenseCoreSDK-static", targets: ["MoonsenseCoreSDK-static"]))
     package.targets.append(Target.binaryTarget(name: "MoonsenseCoreSDK-static",
-                                               url: "https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK-static.xcframework/versions/1.6.0/MoonsenseCoreSDK-static.xcframework-1.6.0.zip",
-                                               checksum: "c2e84cb123f5e5cd2f053400ad3b4f3b5510c0d4f216207ab29f085d2d771ff5"))
+                                               url: "https://dl.moonsense.io/basic/sdk/raw/names/MoonsenseCoreSDK-static.xcframework/versions/1.5.0/MoonsenseCoreSDK-static.xcframework-1.5.0.zip",
+                                               checksum: "d9a437164c65d31a3af6ebc0147e161a9de7bee4c84b4bb93ac966011188f544"))
 }
